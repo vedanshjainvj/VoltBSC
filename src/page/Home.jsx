@@ -161,7 +161,7 @@ const faqs = [
 const Home = () => {
   return (
     <>
-      <MaxWidthWrapper className="max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+      <MaxWidthWrapper className="max-w-8xl font-poppins pt-5 px-4 sm:px-8 lg:px-0">
         <div id="home" className="relative pt-20 lg:pt-28 py-10">
           {/* <div className="absolute inset-x-0  bg-rose-600">
             <Marquee
@@ -451,7 +451,7 @@ const Home = () => {
         </div>
       </MaxWidthWrapper>
       <div
-        className="border-y-[0.1px] border-zinc-300 mt-16 bg-white"
+        className="border-y-[0.1px] font-poppins border-zinc-300 mt-16 bg-white"
         id="what-is-it"
       >
         <MaxWidthWrapper className="max-w-5xl pt-5 px-4 sm:px-8 lg:px-0">
@@ -459,10 +459,10 @@ const Home = () => {
             <div className=" mx-auto px-4">
               <div className="row flex justify-center">
                 <div className="col-md-10 offset-md-1 text-center">
-                  <p className=" font-medium text-lg text-primary">
+                  <p className=" font-medium text-lg text-primary font-poppins">
                     BITCOIN MINING made easy
                   </p>
-                  <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-500 mt-4 mb-6 tracking-wide">
+                  <H3 className="heading text-2xl sm:text-3xl text-zinc-500 mt-4 mb-6 tracking-wide font-poppins">
                     What is Bitcoin Minetrix?
                   </H3>
                   <p className=" text-base text-zinc-600 mb-4">

@@ -7,9 +7,9 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="w-full h-full min-h-screen flex flex-col bg-white text-[#16191E] ">
+      <div className="w-full h-full min-h-screen flex flex-col bg-white font-poppins text-[#16191E] ">
         <NavBar />
-        <main className="flex-1 w-full bg-white">
+        <main className="flex-1 w-full bg-white font-poppins">
           <AppRouter />
         </main>
         <Footer />
