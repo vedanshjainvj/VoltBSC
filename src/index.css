@@ -108,3 +108,20 @@ body {
   font-family: "PolySansSlim", sans-serif;
   background-color: #f3f6fd;
 }
+
+@keyframes cloudMove {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.cloud {
+  position: absolute;
+  top: 20px;
+  width: 800px; /* Adjust size as needed */
+  height: auto;
+  animation: cloudMove 20s linear infinite; /* Adjust duration as needed */
+}

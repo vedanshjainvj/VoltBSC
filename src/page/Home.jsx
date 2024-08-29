@@ -162,7 +162,19 @@ const Home = () => {
   return (
     <>
       <MaxWidthWrapper className="max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
-        <div id="home" className="banner pt-20 lg:pt-28 py-10">
+        <div id="home" className="relative pt-20 lg:pt-28 py-10">
+          {/* <div className="absolute inset-x-0  bg-rose-600">
+            <Marquee
+              gradient={true}
+              repeat={999}
+              reverse={true}
+              className="relative"
+            >
+              <img src="/cloud.svg" alt="cloud" className="cloud" />
+              <img src="/cloud.svg" alt="cloud" className="cloud" />
+              <img src="/cloud.svg" alt="cloud" className="cloud" />
+            </Marquee>
+          </div> */}
           <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="flex flex-col justify-start text-center lg:text-left flex-1">
               <div className="text-3xl sm:text-4xl font-semibold mb-4">
@@ -586,8 +598,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-[#fdfbfa]   ">
-        <MaxWidthWrapper className="mt-16 bg-[#fdfbfa] max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+      <div className="border-y-[0.1px] border-zinc-300 bg-white   ">
+        <MaxWidthWrapper className="mt-16 bg-white max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className="flex flex-col items-center mb-12  sm:mb-14">
             <div className="text-center mb-12  sm:mb-14">
               <p className="subtitle text-base sm:text-lg    mb-4 text-primary font-medium uppercase ">
@@ -717,8 +729,8 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="mb-8  bg-[#fdfbfa]   ">
-        <MaxWidthWrapper className="mt-4 bg-[#fdfbfa] max-w-8xl px-4 lg:px-0">
+      <div className="  bg-white   ">
+        <MaxWidthWrapper className="mt-4 bg-white max-w-8xl px-4 lg:px-0">
           <div className="container mx-auto px-4 text-white text-center py-6 w-full ">
             {/* Heading and Description */}
             <div className="text-center  flex flex-col items-center mb-10 pb-6">
@@ -760,7 +772,7 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="mb-8  bg-[#fdfbfa]   ">
+      <div className="pb-8 border-b-[0.1px] border-zinc-300 bg-[#fdfbfa]   ">
         <MaxWidthWrapper className="mt-4 bg-[#fdfbfa] max-w-8xl px-4 lg:px-0">
           <div className="container mx-auto px-4 text-white text-center py-6 w-full ">
             {/* Heading and Description */}
@@ -782,7 +794,8 @@ const Home = () => {
               orientation="horizontal"
               opts={{
                 align: "start",
-                loop: true,
+
+                // loop: true,
               }}
             >
               <CarouselContent className="w-full max-w-xs mx-auto py-5">
@@ -901,8 +914,8 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-[#fdfbfa]   ">
-        <MaxWidthWrapper className="mt-16 bg-[#fdfbfa] max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+      <div className="border-b-[0.1px] border-zinc-300 bg-[#fdfbfa]   ">
+        <MaxWidthWrapper className=" bg-[#fdfbfa] max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className="flex flex-wrap">
             <div className="w-full md:w-1/2 p-4">
               <div className="relative hidden">
@@ -1007,8 +1020,8 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-[#fdfbfa]   ">
-        <MaxWidthWrapper className="mt-16 bg-[#fdfbfa] max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+      <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-white   ">
+        <MaxWidthWrapper className="mt-16 bg-white max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className="flex flex-wrap">
             <div className="w-full md:w-1/2 p-4">
               <div className="mb-6">
