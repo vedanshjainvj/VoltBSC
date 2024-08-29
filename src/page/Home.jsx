@@ -8,6 +8,7 @@ import { IoMdPaper } from "react-icons/io";
 import { H4 } from "../components/typographyh4";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/Tabs";
 import { H2 } from "../components/typographyh2";
+import { CiDollar } from "react-icons/ci";
 
 const logos = [
   {
@@ -59,14 +60,14 @@ const Home = () => {
   return (
     <>
       <MaxWidthWrapper className="max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
-        <div id="home" className="banner py-10">
+        <div id="home" className="banner pt-20 lg:pt-28 py-10">
           <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="flex flex-col justify-start text-center lg:text-left flex-1">
               <div className="text-3xl sm:text-4xl font-semibold mb-4">
                 <H3 className="block text-3xl sm:text-4xl text-zinc-700">
                   BITCOIN MINETRIX
                 </H3>
-                <span className="flex text-zinc-700">
+                <span className="flex justify-center text-zinc-700">
                   STAKE TOKENS.
                   <span className="block text-primary">MINE BITCOIN.</span>
                 </span>
@@ -301,7 +302,7 @@ const Home = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-      <div className="border-y-[0.1px] border-zinc-300 mt-16  bg-zinc-50">
+      <div className="border-y-[0.1px] border-zinc-300 mt-16 bg-white">
         <MaxWidthWrapper className="max-w-5xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className=" py-12">
             <div className=" mx-auto px-4">
@@ -331,7 +332,7 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="mb-8 bg-zinc-50">
+      <div className="mb-8 bg-white">
         <MaxWidthWrapper className="max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className="flex flex-wrap items-center ">
             {/* First Image */}
@@ -402,17 +403,18 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="mb-8 bg-zinc-50">
+      <div className="mb-8 bg-white">
         <MaxWidthWrapper className="max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className="flex flex-wrap items-center ">
             {/* First Image */}
             <div className="w-full md:w-1/2 order-1 md:order-1">
               <div className="w-full h-full">
-                <img
+                {/* <img
                   src="/animate1.svg"
                   alt="Bitcoin Minetrix Solution"
                   className="object-cover w-full h-full"
-                />
+                /> */}
+                <ContentComponent />
               </div>
             </div>
 
@@ -453,3 +455,98 @@ const Home = () => {
 };
 
 export default Home;
+
+const ContentComponent = () => {
+  return (
+    <>
+      <div className="flex justify-center pt-5 px-4 sm:px-8 lg:px-0">
+        <div className="max-w-lg w-full grid grid-cols-3 grid-rows-5  p-4">
+          <div className=" flex items-center justify-center text-gray-600 text-center"></div>
+
+          <div className="bg-primary rounded-tl-3xl flex items-center justify-center text-white text-center p-2">
+            <p className="heading text-base sm:text-base font-medium text-zinc-50 mt-4 mb-4 tracking-normal">
+              Bitcoin Minetrix
+            </p>
+          </div>
+
+          <div className="bg-gray-300 rounded-tr-3xl flex items-center justify-center text-center p-2">
+            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+              Traditional Cloud Mining
+            </p>
+          </div>
+
+          <div className="bg-[#f6f6f6] rounded-tl-3xl flex items-center px-3 justify-center gap-2 mx-auto p-2">
+            <span className="bg-white rounded-full p-2">
+              <CiDollar size={24} />
+            </span>
+            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+              Cost Entry Point
+            </p>
+          </div>
+          <div className="bg-primary/20 flex items-center justify-center text-primary text-center">
+            Low - Presale (no minimum buy)
+          </div>
+          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
+            6
+          </div>
+          <div className="w-full bg-[#f6f6f6]  flex items-center justify-center px-3 gap-2 mx-auto p-2">
+            <span className="bg-white rounded-full p-2">
+              <CiDollar size={24} />
+            </span>
+            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+              Safety and Security
+            </p>
+          </div>
+          <div className="bg-primary/[0.29] flex items-center justify-center text-primary text-center">
+            Decentralized, user-owned tradable tokens
+          </div>
+          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
+            9
+          </div>
+          <div className="w-full bg-[#f6f6f6]  flex items-center justify-center px-3 gap-2 mx-auto p-2">
+            <span className="bg-white rounded-full p-2">
+              <CiDollar size={24} />
+            </span>
+            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+              Risk
+            </p>
+          </div>
+          <div className="bg-primary/20 flex items-center justify-center text-primary text-center">
+            User-controlled, easy withdraw & sell
+          </div>
+          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
+            12
+          </div>
+          <div className="bg-[#f6f6f6]  flex items-center justify-center px-3 gap-2 mx-auto p-2">
+            <span className="bg-white rounded-full p-2">
+              <CiDollar size={24} />
+            </span>
+            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+              Simplicity
+            </p>
+          </div>
+          <div className="bg-primary/[0.29] flex items-center justify-center text-primary text-center">
+            Buy with ETH, BNB, USDT, or card and stake
+          </div>
+          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
+            15
+          </div>
+          <div className="bg-[#f6f6f6] rounded-bl-3xl flex items-center px-3 justify-center gap-2 mx-auto p-2">
+            <span className="bg-white rounded-full p-2">
+              <CiDollar size={24} />
+            </span>
+            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+              Lock In Period
+            </p>
+          </div>
+          <div className="bg-primary/20 flex items-center justify-center text-primary text-center">
+            Variable dependent on staking
+          </div>
+          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
+            18
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};

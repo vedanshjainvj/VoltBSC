@@ -9,13 +9,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <div
-        className="w-full h-full min-h-screen flex flex-col bg-zinc-50 text-[#16191E] font-polySans"
+        className="w-full h-full min-h-screen flex flex-col bg-white text-[#16191E] font-polySans"
         style={{
           fontFamily: "PolySans",
         }}
       >
         <NavBar />
-        <main className="flex-1 w-full bg-zinc-50">
+        <main className="flex-1 w-full bg-white">
           <AppRouter />
         </main>
         {/* <Footer /> */}
