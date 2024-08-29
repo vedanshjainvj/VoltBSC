@@ -38,6 +38,9 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      maxWidth: {
+        "8xl": "1300px",
+      },
     },
   },
   plugins: [],

@@ -54,7 +54,7 @@ const NavBar = () => {
     <div className="relative w-full z-20">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <div className="w-full flex items-center justify-center py-4 px-4 z-20 pt-3 ">
-          <div className="max-w-6xl w-full flex items-center justify-between">
+          <div className="max-w-8xl w-full flex items-center justify-between">
             <div className=" flex items-center justify-center gap-2">
               <SheetTrigger asChild className="lg:hidden">
                 <button onClick={() => setIsOpen(true)} aria-label="Open menu">
