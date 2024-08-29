@@ -45,22 +45,24 @@ const icon = [
 const Footer = () => {
   return (
     <div className="w-full relative z-10 mx-auto px-4 bg-white py-8 md:py-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between ">
         <div className="flex justify-start md:justify-start mr-auto ml-2 mb-6 md:mb-0">
           <AppLogo className="ml-0" />
         </div>
         <div className="w-full md:w-auto">
           <ul className="flex flex-wrap justify-start md:justify-start -m-4">
-            {link.map((item) => (
-              <li className="w-full lg:w-auto  pl-6 p-4" key={item.name}>
-                <Link
-                  to={item.href}
-                  className="font-normal text-sm uppercase text-gray-600 hover:text-primary transition-colors duration-100"
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
+            <div className=" w-full grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-8 ">
+              {link.map((item) => (
+                <li className="w-full lg:w-fit  pl-6 p-4" key={item.name}>
+                  <Link
+                    to={item.href}
+                    className="font-normal text-sm uppercase text-gray-600 hover:text-primary transition-colors duration-100"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </div>
           </ul>
         </div>
       </div>
