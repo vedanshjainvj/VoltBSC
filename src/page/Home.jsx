@@ -32,6 +32,29 @@ const logos = [
   },
 ];
 
+const features = [
+  {
+    title: "Ease of Entry",
+    description:
+      "Cloud mining eliminates the need for technical expertise, hardware setup, and maintenance. It's user-friendly, making it accessible to beginners.",
+  },
+  {
+    title: "Cost Efficiency",
+    description:
+      "By leveraging cloud mining companies' advanced equipment, individuals avoid high electricity costs and hardware investments.",
+  },
+  {
+    title: "Space & Noise",
+    description:
+      "Mining rigs are bulky, noisy, and produce heat. With cloud mining, users won't have these disruptions in their homes.",
+  },
+  {
+    title: "No Resale Worries",
+    description:
+      "The rapid ageing of mining hardware can make resale challenging. Cloud mining keeps the responsibility to upgrade with the mining companies.",
+  },
+];
+
 const Home = () => {
   return (
     <>
@@ -278,7 +301,7 @@ const Home = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-      <div className="border-y-[0.1px] border-zinc-300 my-16 bg-zinc-50">
+      <div className="border-y-[0.1px] border-zinc-300 mt-16  bg-zinc-50">
         <MaxWidthWrapper className="max-w-5xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className=" py-12">
             <div className=" mx-auto px-4">
@@ -308,9 +331,9 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="my-8 bg-zinc-50">
+      <div className="mb-8 bg-zinc-50">
         <MaxWidthWrapper className="max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
-          <div className="flex flex-wrap items-center about-wrapper">
+          <div className="flex flex-wrap items-center ">
             {/* First Image */}
             <div className="w-full md:w-1/2 order-1 md:order-1">
               <div className="w-full h-full">
@@ -346,7 +369,7 @@ const Home = () => {
 
             {/* Second Text Section */}
             <div className="w-full md:w-1/2 order-4 md:order-3 p-4">
-              <p className="subtitle text-sm sm:text-base mb-4 text-primary font-medium ">
+              <p className="subtitle text-base sm:text-lg mb-4 text-primary font-medium ">
                 How it works
               </p>
               <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-600 mt-4 mb-6 tracking-wide">
@@ -372,8 +395,54 @@ const Home = () => {
                 <img
                   src="/animate1.svg"
                   alt="Stake-To-Mine BTC Mining"
+                  className="object-cover w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </div>
+      <div className="mb-8 bg-zinc-50">
+        <MaxWidthWrapper className="max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+          <div className="flex flex-wrap items-center ">
+            {/* First Image */}
+            <div className="w-full md:w-1/2 order-1 md:order-1">
+              <div className="w-full h-full">
+                <img
+                  src="/animate1.svg"
+                  alt="Bitcoin Minetrix Solution"
                   className="object-cover w-full h-full"
                 />
+              </div>
+            </div>
+
+            {/* First Text Section */}
+            <div className="w-full md:w-1/2 order-2 md:order-2 p-4">
+              <p className="subtitle text-base sm:text-lg    mb-4 text-primary font-medium uppercase ">
+                The Case For Mining
+              </p>
+              <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-600 mt-4 mb-6 tracking-wide">
+                Reasons To Cloud Mine BTC
+              </H3>
+              <P className="heading text-base sm:text-base font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
+                Bitcoin Minetrix presents a reliable cloud mining platform for
+                everyday crypto users that aims to fix the problem of high
+                hardware costs and deceptive scams that have deterred people
+                from BTC mining.
+              </P>
+              <div className="flex flex-col items-center justify-start gap-4">
+                <div className=" flex flex-col items-start justify-start gap-1">
+                  {features.map((feature) => (
+                    <>
+                      <P className="heading text-lg sm:text-xl font-medium text-zinc-600 mt-4 tracking-wide">
+                        {feature.title}
+                      </P>
+                      <P className="heading text-base sm:text-base font-normal text-zinc-600  tracking-normal">
+                        {feature.description}
+                      </P>
+                    </>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
