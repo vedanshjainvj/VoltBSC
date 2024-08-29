@@ -161,8 +161,8 @@ const faqs = [
 const Home = () => {
   return (
     <>
-      <div className="relative  bg-white bg-gradient-to-t from-transparent to-blue-200/55">
-        <div className="w-[100vw]">
+      <div className="relative  w-full bg-white bg-gradient-to-t from-transparent to-blue-200/55">
+        <div className="w-full">
           <div className=" absolute top-24 -ml-[42rem]   w-[100vw]">
             <Marquee
               cloud={true}
