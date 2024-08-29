@@ -181,7 +181,7 @@ const Home = () => {
                 <H3 className="block text-3xl sm:text-4xl text-zinc-700">
                   BITCOIN MINETRIX
                 </H3>
-                <span className="flex justify-center text-zinc-700">
+                <span className="flex justify-center sm:justify-start text-zinc-700">
                   STAKE TOKENS.
                   <span className="block text-primary">MINE BITCOIN.</span>
                 </span>
