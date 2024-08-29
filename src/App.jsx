@@ -15,7 +15,7 @@ const App = () => {
         }}
       >
         <NavBar />
-        <main className="flex-1 w-full">
+        <main className="flex-1 w-full bg-zinc-50">
           <AppRouter />
         </main>
         {/* <Footer /> */}

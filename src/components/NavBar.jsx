@@ -51,9 +51,9 @@ const NavBar = () => {
   };
 
   return (
-    <div className="relative w-full z-20">
+    <div className="fixed top-0 bg-zinc-50 w-full z-20 border-b-[1px] border-zinc-400/50 ">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <div className="w-full flex items-center justify-center py-4 px-4 z-20 pt-3 ">
+        <div className="w-full flex items-center justify-center py-4 px-4 z-20   ">
           <div className="max-w-8xl w-full flex items-center justify-between">
             <div className=" flex items-center justify-center gap-2">
               <SheetTrigger asChild className="lg:hidden">
