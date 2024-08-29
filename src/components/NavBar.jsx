@@ -77,8 +77,27 @@ const NavBar = () => {
     }
   };
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="fixed top-0  w-full z-20 border-b-[1px] border-zinc-400/50 font-poppins">
+    <div
+      className={`fixed top-0 w-full z-20 border-b-[1px] border-zinc-400/50 font-poppins transition-colors ${
+        scrolled ? "bg-white shadow-md" : "bg-transparent"
+      }`}
+    >
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <div className="w-full flex items-center justify-center py-4 px-4 z-20   ">
           <div className="max-w-8xl w-full flex items-center justify-between">
