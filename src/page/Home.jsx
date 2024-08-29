@@ -460,7 +460,7 @@ const ContentComponent = () => {
   return (
     <>
       <div className="flex justify-center pt-5 px-4 sm:px-8 lg:px-0">
-        <div className="max-w-lg w-full grid grid-cols-3 grid-rows-5  p-4">
+        <div className="max-w-xl w-full grid grid-cols-3 grid-rows-5  p-4">
           <div className=" flex items-center justify-center text-gray-600 text-center"></div>
 
           <div className="bg-primary rounded-tl-3xl flex items-center justify-center text-white text-center p-2">
@@ -475,75 +475,75 @@ const ContentComponent = () => {
             </p>
           </div>
 
-          <div className="bg-[#f6f6f6] rounded-tl-3xl flex items-center px-3 justify-center gap-2 mx-auto p-2">
+          <div className="bg-[#f6f6f6] rounded-tl-3xl flex items-center px-2 pl-4 gap-2 mx-auto p-2">
             <span className="bg-white rounded-full p-2">
               <CiDollar size={24} />
             </span>
-            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
               Cost Entry Point
-            </p>
+            </P>
           </div>
           <div className="bg-primary/20 flex items-center justify-center text-primary text-center">
             Low - Presale (no minimum buy)
           </div>
-          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
-            6
+          <div className="bg-[#f6f6f6]/80 flex items-center justify-center text-gray-800/60 text-center">
+            High - Large minimum amounts
           </div>
-          <div className="w-full bg-[#f6f6f6]  flex items-center justify-center px-3 gap-2 mx-auto p-2">
+          <div className="w-full bg-[#f6f6f6]  flex items-center pl-4 px-2 gap-2 mx-auto p-2">
             <span className="bg-white rounded-full p-2">
               <CiDollar size={24} />
             </span>
-            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
               Safety and Security
-            </p>
+            </P>
           </div>
           <div className="bg-primary/[0.29] flex items-center justify-center text-primary text-center">
             Decentralized, user-owned tradable tokens
           </div>
-          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
-            9
+          <div className="bg-[#d1d5db]/30 flex items-center justify-center text-gray-800/60 text-center">
+            Cash deposits required
           </div>
-          <div className="w-full bg-[#f6f6f6]  flex items-center justify-center px-3 gap-2 mx-auto p-2">
+          <div className="w-full bg-[#f6f6f6]  flex items-center pl-4 px-2 gap-2 mx-auto p-2">
             <span className="bg-white rounded-full p-2">
               <CiDollar size={24} />
             </span>
-            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
               Risk
-            </p>
+            </P>
           </div>
           <div className="bg-primary/20 flex items-center justify-center text-primary text-center">
             User-controlled, easy withdraw & sell
           </div>
-          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
-            12
+          <div className="bg-[#f6f6f6]/95 flex items-center justify-center text-gray-800/60 text-center">
+            No refunds, long-term commitments
           </div>
-          <div className="bg-[#f6f6f6]  flex items-center justify-center px-3 gap-2 mx-auto p-2">
+          <div className="w-full bg-[#f6f6f6]  flex items-center pl-4 px-2 gap-2 mx-auto p-2">
             <span className="bg-white rounded-full p-2">
               <CiDollar size={24} />
             </span>
-            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
               Simplicity
-            </p>
+            </P>
           </div>
           <div className="bg-primary/[0.29] flex items-center justify-center text-primary text-center">
             Buy with ETH, BNB, USDT, or card and stake
           </div>
-          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
-            15
+          <div className="bg-[#d1d5db]/30 flex items-center justify-center text-gray-800/60 text-center">
+            Complicated contracts
           </div>
-          <div className="bg-[#f6f6f6] rounded-bl-3xl flex items-center px-3 justify-center gap-2 mx-auto p-2">
+          <div className="w-full bg-[#f6f6f6] rounded-bl-3xl flex items-center px-2 pl-4 gap-2 mx-auto p-2">
             <span className="bg-white rounded-full p-2">
               <CiDollar size={24} />
             </span>
-            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
+            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
               Lock In Period
-            </p>
+            </P>
           </div>
           <div className="bg-primary/20 flex items-center justify-center text-primary text-center">
             Variable dependent on staking
           </div>
-          <div className="bg-rose-600 flex items-center justify-center text-white text-center">
-            18
+          <div className="bg-[#f6f6f6]/95 rounded-br-3xl flex items-center justify-center text-gray-800/60 text-center">
+            Fixed timeframe
           </div>
         </div>
       </div>
