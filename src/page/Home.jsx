@@ -550,52 +550,6 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      {/* <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-primary   ">
-        <MaxWidthWrapper className="mt-16 bg-primary max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
-          <div className=" text-white text-center py-6 w-full mx-auto">
-            <div className="text-center flex justify-center flex-col">
-              <H3 className="heading text-2xl sm:text-4xl font-normal text-zinc-100 mt-4 mb-3 tracking-wide">
-                Bitcoin Minetrix Stake-to-Mine Dashboard
-              </H3>
-              <P className="heading max-w-4xl w-full text-center mx-auto text-base sm:text-base font-semibold text-zinc-100/95  mb-4 tracking-normal">
-                Manage all your BTCMTX tokens and mining credits in one place
-                with the Bitcoin Minetrix dashboard. Gain cloud mining power
-                using your mining credits earned through staking.
-              </P>
-            </div>
-
-            <div className="hidden flex justify-center mt-10 lg:mt-16 pb-3">
-              <img
-                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
-                alt="Cloud"
-                className="absolute left-0 top-0 w-24 h-auto lg:w-32"
-              />
-              <img
-                src="https://bitcoinminetrix.com/assets/images/svg-icons/bitcoin-mining-calculator.svg"
-                alt="Stake-to-Mine Dashboard"
-                className="relative z-10 w-64 h-auto lg:w-80"
-              />
-              <img
-                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
-                alt="Cloud"
-                className="absolute right-0 top-0 w-24 h-auto lg:w-32"
-              />
-            </div>
-          </div>{" "}
-          <div className="text-center mt-10 lg:mt-16 pb-3 flex items-center justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-              alt="Stake-to-Mine Dashboard"
-              className="hidden md:block w-full h-auto lg:w-80 mx-auto"
-            />
-            <img
-              src="/assets/images/svg-icons/calc-mob.svg"
-              alt="Stake-to-Mine Dashboard Mobile"
-              className="block md:hidden w-48 h-auto mx-auto"
-            />
-          </div>
-        </MaxWidthWrapper>
-      </div> */}
       <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-primary bg-[url('/bottom-svg.svg')] bg-cover bg-no-repeat bg-center w-full">
         <MaxWidthWrapper className="bg-primary max-w-8xl pt-5 px-4 sm:px-8 lg:px-0 pb-10 ">
           <div className="text-white text-center py-6 w-full mx-auto">
@@ -631,6 +585,49 @@ const Home = () => {
                 alt="Stake-to-Mine Dashboard Mobile"
                 className="absolute -top-36 sm:top-12 md:-translate-y-[1%] right-0 lg:-right-10 w-64 md:w-64 h-auto z-50"
               />
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </div>
+      <div className="mb-8  bg-[#fdfbfa]   ">
+        <MaxWidthWrapper className="mt-4 bg-[#fdfbfa] max-w-8xl px-4 lg:px-0">
+          <div className="container mx-auto px-4 text-white text-center py-6 w-full ">
+            {/* Heading and Description */}
+            <div className="text-center  flex flex-col items-center mb-10 pb-6">
+              <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-600 mt-4 mb-2 tracking-wide">
+                Join Our $30K Minedrop!
+              </H3>
+              <P className="heading max-w-3xl text-base sm:text-base font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
+                Enter our Gleam competition below to stand a chance to win one
+                of 10 prize allocations, each worth $3,000. We aim to reward our
+                community with $30,000 worth of $BTCMTX tokens in total. Terms
+                and conditions apply.
+              </P>
+            </div>
+
+            {/* Content: Iframe and Image */}
+            <div className="grid grid-cols-1 lg:grid-cols-2   justify-center items-center">
+              {/* Iframe */}
+              <div className="flex flex-1 flex-grow mb-8 lg:mb-0 px-3">
+                <iframe
+                  id="frameAirdrop"
+                  src="https://gleam.io/FMTuv/bitcoin-minetrix-30000-minedrop"
+                  allowFullScreen
+                  allow="attribution-reporting"
+                  title="Bitcoin Minetrix $30,000 Minedrop"
+                  className="w-full h-96 border border-gray-700 rounded-md"
+                  style={{ zIndex: 1 }}
+                ></iframe>
+              </div>
+
+              {/* Image */}
+              <div className=" flex justify-center">
+                <img
+                  src="/bitcoin-mining-competition.svg"
+                  alt="Join Our $30K Minedrop!"
+                  className="w-full h-auto "
+                />
+              </div>
             </div>
           </div>
         </MaxWidthWrapper>
