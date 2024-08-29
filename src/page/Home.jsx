@@ -33,6 +33,8 @@ import {
   TableHeader,
   TableRow,
 } from "../components/Table";
+import { Chart } from "../components/Chart";
+import Marquee from "../components/marquee";
 
 const logos = [
   {
@@ -336,11 +338,11 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="w-full mx-auto max-w-5xl px-6 lg:px-8">
             <H2 className="text-center border-0 text-sm sm:text-sm font-medium leading-8 text-zinc-400 uppercase">
               Featured in
             </H2>
-            <div className="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+            <div className="mx-auto mt-2 hidden sm:grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
               {logos.map((logo) => (
                 <img
                   key={logo.src}
@@ -349,6 +351,40 @@ const Home = () => {
                   className="col-span-2 h-7 w-auto object-contain sm:col-span-1"
                 />
               ))}
+            </div>
+
+            <div className="w-full flex sm:hidden">
+              {/* <Carousel
+                className="w-full"
+                orientation="horizontal"
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
+                <CarouselContent>
+                  {logos.map((logo) => (
+                    <CarouselItem>
+                      <img
+                        key={logo.src}
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="col-span-2 h-7 w-auto object-contain sm:col-span-1"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </Carousel> */}
+              <Marquee className="w-full" gradient={false}>
+                {logos.map((logo) => (
+                  <img
+                    key={logo.src}
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="col-span-2 h-7 w-auto object-contain sm:col-span-1"
+                  />
+                ))}
+              </Marquee>
             </div>
           </div>
         </div>
@@ -820,7 +856,7 @@ const Home = () => {
         <MaxWidthWrapper className="mt-16 bg-[#fdfbfa] max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className="flex flex-wrap">
             <div className="w-full md:w-1/2 p-4">
-              <div className="relative">
+              <div className="relative hidden">
                 <div id="chartdiv" style={{ height: "600px" }}>
                   <div
                     style={{
@@ -851,6 +887,7 @@ const Home = () => {
                   </span>
                 </p>
               </div>
+              {/* <Chart /> */}
             </div>
 
             <div className="w-full md:w-1/2 p-4">
