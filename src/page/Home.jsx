@@ -169,7 +169,7 @@ const Home = () => {
               className="w-full "
               repeat={1}
               reverse={true}
-              cloudDuration={2}
+              cloudDuration={1.5}
             >
               <img src="/cloud.svg" alt="cloud" className="w-64  h-auto" />
             </Marquee>
@@ -180,7 +180,7 @@ const Home = () => {
               className="w-full "
               repeat={1}
               reverse={true}
-              cloudDuration={2}
+              cloudDuration={1.5}
             >
               <img src="/cloud.svg" alt="cloud" className="w-28  h-auto" />
             </Marquee>
@@ -191,7 +191,7 @@ const Home = () => {
               className="w-full "
               repeat={1}
               reverse={true}
-              cloudDuration={2}
+              cloudDuration={1.5}
             >
               <img src="/cloud.svg" alt="cloud" className="w-48  h-auto" />
             </Marquee>
@@ -202,7 +202,7 @@ const Home = () => {
               className="w-full "
               repeat={1}
               reverse={true}
-              cloudDuration={2}
+              cloudDuration={1.5}
             >
               <img src="/cloud.svg" alt="cloud" className="w-48  h-auto" />
             </Marquee>
@@ -211,7 +211,7 @@ const Home = () => {
         <MaxWidthWrapper className="max-w-8xl bg-transparent font-poppins pt-5 px-4 sm:px-8 lg:px-0 ">
           <div id="home" className="w-full relative pt-20 lg:pt-28 py-10 ">
             <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="flex flex-col justify-start text-center lg:text-left flex-1">
+              <div className="flex flex-col justify-start text-center  lg:text-left flex-1">
                 <div className="text-3xl sm:text-4xl font-semibold mb-4">
                   <H3 className="block text-3xl sm:text-4xl text-zinc-700">
                     BITCOIN MINETRIX
