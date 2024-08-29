@@ -160,11 +160,11 @@ const Home = () => {
                 Whitepaper <IoMdPaper className="w-6 h-6" />
               </Button>
             </div>
-            <div className="mt-6 lg:mt-8 flex-1 flex-grow w-full flex items-end justify-center lg:justify-end">
+            <div className="ml-20 flex-1 flex-grow w-full flex items-end justify-center">
               <img
                 src="/Bitcoin-Cloud-Mining.svg"
                 alt="Bitcoin-Cloud-Mining"
-                className="w-full max-w-xs sm:max-w-md lg:max-w-lg mx-auto"
+                className="w-full max-w-3xl mx-auto"
               />
             </div>
           </div>
