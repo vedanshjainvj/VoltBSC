@@ -850,6 +850,58 @@ const Home = () => {
                       </li>
                     </ul>
                   </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="p-6 bg-white shadow-md rounded-lg">
+                    <P className=" text-left text-base sm:text-base font-medium uppercase text-zinc-600/60 mt-4 mb-4 tracking-normal">
+                      <span className="font-medium text-primary">Phase 1:</span>{" "}
+                      Presale and token distribution
+                    </P>
+                    <p className="text-2xl text-left font-bold text-primary uppercase mb-4">
+                      Presale
+                    </p>
+                    <ul className="list-disc list-inside text-left">
+                      <li className="text-gray-600 mb-2">
+                        Industry research and consultation
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        Token, presale and staking contract development
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        BTCMTX campaign - presale launch, claim and exchange
+                        listings
+                      </li>
+                      <li className="text-gray-600">
+                        Extensive multimedia marketing campaign launch
+                      </li>
+                    </ul>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="p-6 bg-white shadow-md rounded-lg">
+                    <P className=" text-left text-base sm:text-base font-medium uppercase text-zinc-600/60 mt-4 mb-4 tracking-normal">
+                      <span className="font-medium text-primary">Phase 1:</span>{" "}
+                      Presale and token distribution
+                    </P>
+                    <p className="text-2xl text-left font-bold text-primary uppercase mb-4">
+                      Presale
+                    </p>
+                    <ul className="list-disc list-inside text-left">
+                      <li className="text-gray-600 mb-2">
+                        Industry research and consultation
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        Token, presale and staking contract development
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        BTCMTX campaign - presale launch, claim and exchange
+                        listings
+                      </li>
+                      <li className="text-gray-600">
+                        Extensive multimedia marketing campaign launch
+                      </li>
+                    </ul>
+                  </Card>
                 </CarouselItem>{" "}
                 <CarouselItem>
                   <Card className="p-6 bg-white shadow-md rounded-lg">
