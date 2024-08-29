@@ -1,14 +1,22 @@
 import React from "react";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
-import { Link } from "react-router-dom";
-import { H3 } from "../components/typographyh3";
-import { P } from "../components/typographypara";
-import { Button } from "../components/Button";
 import { IoMdPaper } from "react-icons/io";
-import { H4 } from "../components/typographyh4";
+import { Link } from "react-router-dom";
+import { Button } from "../components/Button";
+import ContentComponent from "../components/ContentComponent";
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/Tabs";
 import { H2 } from "../components/typographyh2";
-import { CiDollar } from "react-icons/ci";
+import { H3 } from "../components/typographyh3";
+import { H4 } from "../components/typographyh4";
+import { P } from "../components/typographypara";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "../components/Card";
 
 const logos = [
   {
@@ -404,10 +412,10 @@ const Home = () => {
         </MaxWidthWrapper>
       </div>
       <div className="mb-8 bg-white">
-        <MaxWidthWrapper className="max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+        <div className="max-w-8xl mx-auto overflow-hidden pt-5 px-0 sm:px-6 lg:px-8 bg-white">
           <div className="flex flex-wrap items-center ">
             {/* First Image */}
-            <div className="w-full md:w-1/2 order-1 md:order-1">
+            <div className="w-full lg:w-1/2 order-1 md:order-1">
               <div className="w-full h-full">
                 {/* <img
                   src="/animate1.svg"
@@ -419,7 +427,7 @@ const Home = () => {
             </div>
 
             {/* First Text Section */}
-            <div className="w-full md:w-1/2 order-2 md:order-2 p-4">
+            <div className="w-full lg:w-1/2 order-2 lg:order-2 p-4 pt-10 sm:pt-0">
               <p className="subtitle text-base sm:text-lg    mb-4 text-primary font-medium uppercase ">
                 The Case For Mining
               </p>
@@ -448,6 +456,183 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-[#fdfbfa]   ">
+        <MaxWidthWrapper className="mt-16 bg-[#fdfbfa] max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+          <div className="flex flex-col items-center mb-12  sm:mb-14">
+            <div className="text-center mb-12  sm:mb-14">
+              <p className="subtitle text-base sm:text-lg    mb-4 text-primary font-medium uppercase ">
+                How To Buy
+              </p>
+              <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-600 mt-4 mb-6 tracking-wide">
+                How To Access BTC Mining
+              </H3>
+              <P className="heading max-w-3xl text-base sm:text-base font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
+                Purchase BTCMTX tokens using ETH, USDT, BNB or bank card today
+                and stake them to earn cloud mining credits. Burn credits to
+                increase your bitcoin mining power.
+              </P>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 justify-center gap-8 ">
+              <Card className="w-full min-h-fit flex-grow flex flex-1 flex-col  bg-white shadow-lg rounded-lg">
+                <CardHeader className="text-left">
+                  <img
+                    className="w-12 h-12  mb-4"
+                    alt="Buy Tokens"
+                    src="/token.svg"
+                  />
+                  <CardTitle className="text-lg font-semibold text-gray-800 ">
+                    <P className="heading text-lg sm:text-xl font-semibold text-zinc-600  tracking-wide">
+                      Buy Tokens
+                    </P>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base text-gray-600">
+                    Connect your wallet and use the presale widget at the top of
+                    the page to buy BTCMTX tokens. You can use ETH, BNB, USDT,
+                    or bank card. Make sure you have enough ETH or BNB to cover
+                    gas fees.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+              <Card className="w-full min-h-fit flex-grow flex flex-1 flex-col  bg-white shadow-lg rounded-lg">
+                <CardHeader className="text-left">
+                  <img
+                    className="w-12 h-12  mb-4"
+                    alt="Stake-to-Mine"
+                    src="/stake.svg"
+                  />
+                  <CardTitle className="text-lg font-semibold text-gray-800">
+                    <P className="heading text-lg sm:text-xl font-semibold text-zinc-600 tracking-wide">
+                      {" "}
+                      Stake-to-Mine{" "}
+                    </P>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base text-gray-600">
+                    If you select the ‘Buy & Stake’ option you can start staking
+                    immediately and earn more BTCMTX tokens. Staking for mining
+                    credits (Stake-to-Mine) will be available when the app is
+                    launched.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+              <Card className="w-full min-h-fit flex-grow flex flex-1 flex-col  bg-white shadow-lg rounded-lg">
+                <CardHeader className="text-left">
+                  <img
+                    className="w-12 h-12  mb-4"
+                    alt="Earn BTC"
+                    src="/redeem.svg"
+                  />
+                  <CardTitle className="text-lg font-semibold text-gray-800">
+                    <P className="heading text-lg sm:text-xl font-semibold text-zinc-600 tracking-wide">
+                      {" "}
+                      Earn BTC{" "}
+                    </P>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base text-gray-600">
+                    Your staked BTCMTX will generate mining credits over time.
+                    Burn mining credits to purchase bitcoin cloud mining power.
+                    The more credits you burn, the more BTC you&#39;ll earn
+                    through cloud mining.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </div>
+      {/* <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-primary   ">
+        <MaxWidthWrapper className="mt-16 bg-primary max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+          <div className=" text-white text-center py-6 w-full mx-auto">
+            <div className="text-center flex justify-center flex-col">
+              <H3 className="heading text-2xl sm:text-4xl font-normal text-zinc-100 mt-4 mb-3 tracking-wide">
+                Bitcoin Minetrix Stake-to-Mine Dashboard
+              </H3>
+              <P className="heading max-w-4xl w-full text-center mx-auto text-base sm:text-base font-semibold text-zinc-100/95  mb-4 tracking-normal">
+                Manage all your BTCMTX tokens and mining credits in one place
+                with the Bitcoin Minetrix dashboard. Gain cloud mining power
+                using your mining credits earned through staking.
+              </P>
+            </div>
+
+            <div className="hidden flex justify-center mt-10 lg:mt-16 pb-3">
+              <img
+                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
+                alt="Cloud"
+                className="absolute left-0 top-0 w-24 h-auto lg:w-32"
+              />
+              <img
+                src="https://bitcoinminetrix.com/assets/images/svg-icons/bitcoin-mining-calculator.svg"
+                alt="Stake-to-Mine Dashboard"
+                className="relative z-10 w-64 h-auto lg:w-80"
+              />
+              <img
+                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
+                alt="Cloud"
+                className="absolute right-0 top-0 w-24 h-auto lg:w-32"
+              />
+            </div>
+          </div>{" "}
+          <div className="text-center mt-10 lg:mt-16 pb-3 flex items-center justify-center">
+            <img
+              src="https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt="Stake-to-Mine Dashboard"
+              className="hidden md:block w-full h-auto lg:w-80 mx-auto"
+            />
+            <img
+              src="/assets/images/svg-icons/calc-mob.svg"
+              alt="Stake-to-Mine Dashboard Mobile"
+              className="block md:hidden w-48 h-auto mx-auto"
+            />
+          </div>
+        </MaxWidthWrapper>
+      </div> */}
+      <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-primary bg-[url('/bottom-svg.svg')] bg-cover bg-no-repeat bg-center w-full">
+        <MaxWidthWrapper className="bg-primary max-w-8xl pt-5 px-4 sm:px-8 lg:px-0 pb-10 ">
+          <div className="text-white text-center py-6 w-full mx-auto">
+            <div className="flex flex-col items-center">
+              <H3 className="text-2xl sm:text-4xl font-light text-zinc-100 mt-4 mb-3 tracking-wide">
+                Bitcoin Minetrix Stake-to-Mine Dashboard
+              </H3>
+              <P className="max-w-4xl text-base sm:text-base font-semibold text-zinc-200 mb-4 tracking-normal">
+                Manage all your BTCMTX tokens and mining credits in one place
+                with the Bitcoin Minetrix dashboard. Gain cloud mining power
+                using your mining credits earned through staking.
+              </P>
+            </div>
+
+            <div className="relative max-w-4xl mx-auto flex justify-center mt-10 lg:mt-16 pb-3 origin-center">
+              <img
+                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
+                alt="Cloud"
+                className="hidden lg:block absolute left-0 top-0 w-full h-auto "
+              />
+              <img
+                src="https://bitcoinminetrix.com/assets/images/svg-icons/bitcoin-mining-calculator.svg"
+                alt="Stake-to-Mine Dashboard"
+                className="w-full h-auto z-10"
+              />
+              <img
+                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
+                alt="Cloud"
+                className="hidden lg:block absolute right-0 top-0 w-24 h-auto lg:w-32"
+              />{" "}
+              <img
+                src="/calc-mob.svg"
+                alt="Stake-to-Mine Dashboard Mobile"
+                className="absolute -top-36 sm:top-12 md:-translate-y-[1%] right-0 lg:-right-10 w-64 md:w-64 h-auto z-50"
+              />
+            </div>
+          </div>
         </MaxWidthWrapper>
       </div>
     </>
@@ -455,98 +640,3 @@ const Home = () => {
 };
 
 export default Home;
-
-const ContentComponent = () => {
-  return (
-    <>
-      <div className="flex justify-center pt-5 px-4 sm:px-8 lg:px-0">
-        <div className="max-w-xl w-full grid grid-cols-3 grid-rows-5  p-4">
-          <div className=" flex items-center justify-center text-gray-600 text-center"></div>
-
-          <div className="bg-primary rounded-tl-3xl flex items-center justify-center text-white text-center p-2">
-            <p className="heading text-base sm:text-base font-medium text-zinc-50 mt-4 mb-4 tracking-normal">
-              Bitcoin Minetrix
-            </p>
-          </div>
-
-          <div className="bg-gray-300 rounded-tr-3xl flex items-center justify-center text-center p-2">
-            <p className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
-              Traditional Cloud Mining
-            </p>
-          </div>
-
-          <div className="bg-[#f6f6f6] rounded-tl-3xl flex items-center px-2 pl-4 gap-2 mx-auto p-2">
-            <span className="bg-white rounded-full p-2">
-              <CiDollar size={24} />
-            </span>
-            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
-              Cost Entry Point
-            </P>
-          </div>
-          <div className="bg-primary/20 flex items-center justify-center text-primary text-center">
-            Low - Presale (no minimum buy)
-          </div>
-          <div className="bg-[#f6f6f6]/80 flex items-center justify-center text-gray-800/60 text-center">
-            High - Large minimum amounts
-          </div>
-          <div className="w-full bg-[#f6f6f6]  flex items-center pl-4 px-2 gap-2 mx-auto p-2">
-            <span className="bg-white rounded-full p-2">
-              <CiDollar size={24} />
-            </span>
-            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
-              Safety and Security
-            </P>
-          </div>
-          <div className="bg-primary/[0.29] flex items-center justify-center text-primary text-center">
-            Decentralized, user-owned tradable tokens
-          </div>
-          <div className="bg-[#d1d5db]/30 flex items-center justify-center text-gray-800/60 text-center">
-            Cash deposits required
-          </div>
-          <div className="w-full bg-[#f6f6f6]  flex items-center pl-4 px-2 gap-2 mx-auto p-2">
-            <span className="bg-white rounded-full p-2">
-              <CiDollar size={24} />
-            </span>
-            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
-              Risk
-            </P>
-          </div>
-          <div className="bg-primary/20 flex items-center justify-center text-primary text-center">
-            User-controlled, easy withdraw & sell
-          </div>
-          <div className="bg-[#f6f6f6]/95 flex items-center justify-center text-gray-800/60 text-center">
-            No refunds, long-term commitments
-          </div>
-          <div className="w-full bg-[#f6f6f6]  flex items-center pl-4 px-2 gap-2 mx-auto p-2">
-            <span className="bg-white rounded-full p-2">
-              <CiDollar size={24} />
-            </span>
-            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
-              Simplicity
-            </P>
-          </div>
-          <div className="bg-primary/[0.29] flex items-center justify-center text-primary text-center">
-            Buy with ETH, BNB, USDT, or card and stake
-          </div>
-          <div className="bg-[#d1d5db]/30 flex items-center justify-center text-gray-800/60 text-center">
-            Complicated contracts
-          </div>
-          <div className="w-full bg-[#f6f6f6] rounded-bl-3xl flex items-center px-2 pl-4 gap-2 mx-auto p-2">
-            <span className="bg-white rounded-full p-2">
-              <CiDollar size={24} />
-            </span>
-            <P className="heading text-base sm:text-base font-medium text-zinc-500 mt-4 mb-4 tracking-normal">
-              Lock In Period
-            </P>
-          </div>
-          <div className="bg-primary/20 flex items-center justify-center text-primary text-center">
-            Variable dependent on staking
-          </div>
-          <div className="bg-[#f6f6f6]/95 rounded-br-3xl flex items-center justify-center text-gray-800/60 text-center">
-            Fixed timeframe
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
