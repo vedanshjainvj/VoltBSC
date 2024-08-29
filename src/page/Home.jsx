@@ -621,78 +621,94 @@ const Home = () => {
               </P>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 justify-center gap-8 ">
-              <Card className="w-full min-h-fit flex-grow flex flex-1 flex-col  bg-white shadow-lg rounded-lg">
-                <CardHeader className="text-left">
-                  <img
-                    className="w-12 h-12  mb-4"
-                    alt="Buy Tokens"
-                    src="/token.svg"
-                  />
-                  <CardTitle className="text-lg font-semibold text-gray-800 ">
-                    <P className="heading text-lg sm:text-xl font-semibold text-zinc-600  tracking-wide">
-                      Buy Tokens
-                    </P>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base text-gray-600">
-                    Connect your wallet and use the presale widget at the top of
-                    the page to buy BTCMTX tokens. You can use ETH, BNB, USDT,
-                    or bank card. Make sure you have enough ETH or BNB to cover
-                    gas fees.
-                  </CardDescription>
-                </CardContent>
-              </Card>
+            <Carousel
+              className="w-full "
+              orientation="horizontal"
+              opts={{
+                align: "center",
 
-              <Card className="w-full min-h-fit flex-grow flex flex-1 flex-col  bg-white shadow-lg rounded-lg">
-                <CardHeader className="text-left">
-                  <img
-                    className="w-12 h-12  mb-4"
-                    alt="Stake-to-Mine"
-                    src="/stake.svg"
-                  />
-                  <CardTitle className="text-lg font-semibold text-gray-800">
-                    <P className="heading text-lg sm:text-xl font-semibold text-zinc-600 tracking-wide">
-                      {" "}
-                      Stake-to-Mine{" "}
-                    </P>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base text-gray-600">
-                    If you select the ‘Buy & Stake’ option you can start staking
-                    immediately and earn more BTCMTX tokens. Staking for mining
-                    credits (Stake-to-Mine) will be available when the app is
-                    launched.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-
-              <Card className="w-full min-h-fit flex-grow flex flex-1 flex-col  bg-white shadow-lg rounded-lg">
-                <CardHeader className="text-left">
-                  <img
-                    className="w-12 h-12  mb-4"
-                    alt="Earn BTC"
-                    src="/redeem.svg"
-                  />
-                  <CardTitle className="text-lg font-semibold text-gray-800">
-                    <P className="heading text-lg sm:text-xl font-semibold text-zinc-600 tracking-wide">
-                      {" "}
-                      Earn BTC{" "}
-                    </P>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base text-gray-600">
-                    Your staked BTCMTX will generate mining credits over time.
-                    Burn mining credits to purchase bitcoin cloud mining power.
-                    The more credits you burn, the more BTC you&#39;ll earn
-                    through cloud mining.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </div>
+                // loop: true,
+              }}
+            >
+              <CarouselContent className="w-full max-w-xs mx-auto py-5">
+                <CarouselItem>
+                  <Card className="w-full min-h-fit flex-grow flex flex-1 flex-col  bg-white shadow-lg rounded-lg">
+                    <CardHeader className="text-left">
+                      <img
+                        className="w-12 h-12  mb-4"
+                        alt="Buy Tokens"
+                        src="/token.svg"
+                      />
+                      <CardTitle className="text-lg font-semibold text-gray-800 ">
+                        <P className="heading text-lg sm:text-xl font-semibold text-zinc-600  tracking-wide">
+                          Buy Tokens
+                        </P>
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-base text-gray-600">
+                        Connect your wallet and use the presale widget at the
+                        top of the page to buy BTCMTX tokens. You can use ETH,
+                        BNB, USDT, or bank card. Make sure you have enough ETH
+                        or BNB to cover gas fees.
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="w-full min-h-fit flex-grow flex flex-1 flex-col  bg-white shadow-lg rounded-lg">
+                    <CardHeader className="text-left">
+                      <img
+                        className="w-12 h-12  mb-4"
+                        alt="Stake-to-Mine"
+                        src="/stake.svg"
+                      />
+                      <CardTitle className="text-lg font-semibold text-gray-800">
+                        <P className="heading text-lg sm:text-xl font-semibold text-zinc-600 tracking-wide">
+                          {" "}
+                          Stake-to-Mine{" "}
+                        </P>
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-base text-gray-600">
+                        If you select the ‘Buy & Stake’ option you can start
+                        staking immediately and earn more BTCMTX tokens. Staking
+                        for mining credits (Stake-to-Mine) will be available
+                        when the app is launched.
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>{" "}
+                <CarouselItem>
+                  <Card className="w-full min-h-fit flex-grow flex flex-1 flex-col  bg-white shadow-lg rounded-lg">
+                    <CardHeader className="text-left">
+                      <img
+                        className="w-12 h-12  mb-4"
+                        alt="Earn BTC"
+                        src="/redeem.svg"
+                      />
+                      <CardTitle className="text-lg font-semibold text-gray-800">
+                        <P className="heading text-lg sm:text-xl font-semibold text-zinc-600 tracking-wide">
+                          {" "}
+                          Earn BTC{" "}
+                        </P>
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-base text-gray-600">
+                        Your staked BTCMTX will generate mining credits over
+                        time. Burn mining credits to purchase bitcoin cloud
+                        mining power. The more credits you burn, the more BTC
+                        you&#39;ll earn through cloud mining.
+                      </CardDescription>
+                    </CardContent>
+                  </Card>{" "}
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselNext />
+              <CarouselPrevious />
+            </Carousel>
           </div>
         </MaxWidthWrapper>
       </div>
