@@ -163,7 +163,7 @@ const Home = () => {
     <>
       <div className="relative  bg-white bg-gradient-to-t from-transparent to-blue-200/55">
         <div className="w-[100vw]">
-          <div className=" absolute top-24 -pl-48  w-[100vw]">
+          <div className=" absolute top-24 -ml-[42rem]   w-[100vw]">
             <Marquee
               cloud={true}
               className="w-full "
@@ -174,7 +174,7 @@ const Home = () => {
               <img src="/cloud.svg" alt="cloud" className="w-64  h-auto" />
             </Marquee>
           </div>
-          <div className=" absolute top-52  -pl-6 w-[100vw]">
+          <div className=" absolute top-52  -ml-[29rem] w-[100vw]">
             <Marquee
               cloud={true}
               className="w-full "
@@ -185,7 +185,7 @@ const Home = () => {
               <img src="/cloud.svg" alt="cloud" className="w-28  h-auto" />
             </Marquee>
           </div>
-          <div className=" absolute top-36 -pl-14  w-[100vw]">
+          <div className=" absolute top-36 -ml-[12rem]  w-[100vw]">
             <Marquee
               cloud={true}
               className="w-full "
@@ -196,7 +196,7 @@ const Home = () => {
               <img src="/cloud.svg" alt="cloud" className="w-48  h-auto" />
             </Marquee>
           </div>
-          <div className=" absolute top-20 -pl-28  w-[100vw]">
+          <div className=" absolute top-20 -ml-[64rem]  w-[100vw]">
             <Marquee
               cloud={true}
               className="w-full "
