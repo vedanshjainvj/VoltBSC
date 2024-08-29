@@ -99,7 +99,7 @@ const DonutChart = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto relative">
+    <div className="max-w-md flex items-center justify-center mx-auto relative">
       <Doughnut data={data} options={options} />
       <p className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
         <span className="block text-lg font-semibold">Total Supply</span>
