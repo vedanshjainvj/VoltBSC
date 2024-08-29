@@ -603,7 +603,7 @@ const Home = () => {
               <H3 className="text-2xl sm:text-4xl font-light text-zinc-100 mt-4 mb-3 tracking-wide">
                 Bitcoin Minetrix Stake-to-Mine Dashboard
               </H3>
-              <P className="max-w-4xl text-base sm:text-base font-semibold text-zinc-200 mb-4 tracking-normal">
+              <P className="max-w-4xl text-base sm:text-lg font-semibold text-zinc-100 mb-4 tracking-normal">
                 Manage all your BTCMTX tokens and mining credits in one place
                 with the Bitcoin Minetrix dashboard. Gain cloud mining power
                 using your mining credits earned through staking.
