@@ -450,7 +450,10 @@ const Home = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-      <div className="border-y-[0.1px] border-zinc-300 mt-16 bg-white">
+      <div
+        className="border-y-[0.1px] border-zinc-300 mt-16 bg-white"
+        id="what-is-it"
+      >
         <MaxWidthWrapper className="max-w-5xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className=" py-12">
             <div className=" mx-auto px-4">
@@ -598,7 +601,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="border-y-[0.1px] border-zinc-300 bg-white   ">
+      <div
+        className="border-y-[0.1px] border-zinc-300 bg-white   "
+        id="how-to-buy"
+      >
         <MaxWidthWrapper className="mt-16 bg-white max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className="flex flex-col items-center mb-12  sm:mb-14">
             <div className="text-center mb-12  sm:mb-14">
@@ -772,7 +778,10 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="pb-8 border-b-[0.1px] border-zinc-300 bg-[#fdfbfa]   ">
+      <div
+        className="pb-8 border-b-[0.1px] border-zinc-300 bg-[#fdfbfa]   "
+        id="roadmap"
+      >
         <MaxWidthWrapper className="mt-4 bg-[#fdfbfa] max-w-8xl px-4 lg:px-0">
           <div className="container mx-auto px-4 text-white text-center py-6 w-full ">
             {/* Heading and Description */}
@@ -1072,7 +1081,10 @@ const Home = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-white   ">
+      <div
+        className="mb-8 border-y-[0.1px] border-zinc-300 bg-white   "
+        id="faqs"
+      >
         <MaxWidthWrapper className="mt-16 bg-white max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
           <div className="flex flex-wrap">
             <div className="w-full md:w-1/2 p-4">

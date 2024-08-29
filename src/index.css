@@ -71,7 +71,7 @@
 }
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 :root {
@@ -91,7 +91,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  font-family: "PolySans", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
 }
 
 
@@ -104,8 +106,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "PolySans", sans-serif;
-  font-family: "PolySansSlim", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f3f6fd;
 }
 
@@ -113,6 +114,7 @@ body {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -121,7 +123,9 @@ body {
 .cloud {
   position: absolute;
   top: 20px;
-  width: 800px; /* Adjust size as needed */
+  width: 800px;
+  /* Adjust size as needed */
   height: auto;
-  animation: cloudMove 20s linear infinite; /* Adjust duration as needed */
+  animation: cloudMove 20s linear infinite;
+  /* Adjust duration as needed */
 }

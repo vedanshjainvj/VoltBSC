@@ -16,11 +16,12 @@ import {
 } from "./Sheet";
 import { BsTwitterX } from "react-icons/bs";
 import { PiDiscordLogo } from "react-icons/pi";
+import { HashLink } from "react-router-hash-link";
 
 const icon = [
   { icon: <BsTwitterX className="text-zinc-600" size={16} /> },
   { icon: <FaTelegram className="text-zinc-600" size={16} /> },
-  { icon: <PiDiscordLogo   className="text-zinc-600" size={16} /> },
+  { icon: <PiDiscordLogo className="text-zinc-600" size={16} /> },
   {
     icon: (
       <img
@@ -47,19 +48,19 @@ const NavBar = () => {
   const [expandedMenu, setExpandedMenu] = useState(null);
 
   const menuOptions = [
-    { title: "Stake to mine", path: "/dashboard" },
+    { title: "Stake to mine", path: "#dashboard" },
     {
       title: "About",
-      path: "/about",
+      path: "#about",
       submenu: [
-        { title: "  WHAT IS IT", path: "/blog/single-blog" },
-        { title: "HOW TO BUY", path: "/blog/single-blog" },
-        { title: "ROADMAP", path: "/blog/single-blog" },
-        { title: "FAQs", path: "/blog/single-blog" },
+        { title: "  WHAT IS IT", path: "#what-is-it" },
+        { title: "HOW TO BUY", path: "#how-to-buy" },
+        { title: "ROADMAP", path: "#roadmap" },
+        { title: "FAQs", path: "#faqs" },
       ],
     },
-    { title: "Minedrop", path: "/minedrop" },
-    { title: "Help", path: "/help" },
+    { title: "Minedrop", path: "#minedrop" },
+    { title: "Help", path: "#help" },
   ];
 
   useEffect(() => {
@@ -97,8 +98,10 @@ const NavBar = () => {
             <nav className="hidden lg:flex items-center justify-center gap-10">
               {menuOptions.map((option) => (
                 <div key={option.path} className="relative group">
-                  <Link
-                    to={option.submenu ? null : option.path}
+                  <HashLink
+                    smooth
+                    // to={option.submenu ? null : option.path}
+                    to={option.path}
                     className={`text-sm uppercase font-normal tracking-wider ${
                       option.path === location.pathname
                         ? "text-primary font-semibold"
@@ -107,7 +110,7 @@ const NavBar = () => {
                   >
                     {option.title}
                     {option.submenu && <BiChevronDown className="ml-1" />}
-                  </Link>
+                  </HashLink>
                   {option.submenu && (
                     <div className="absolute left-0 mt-3  p-2 w-48 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
                       <div
@@ -117,14 +120,16 @@ const NavBar = () => {
                         aria-labelledby="options-menu"
                       >
                         {option.submenu.map((subItem) => (
-                          <Link
-                            key={subItem.path}
+                          <HashLink
+                            smooth
+                            // to={option.submenu ? null : option.path}
                             to={subItem.path}
+                            key={subItem.path}
                             className="block px-4 py-3 text-sm text-gray-600 hover:text-primary hover:bg-zinc-200 rounded-lg"
                             role="menuitem"
                           >
                             {subItem.title}
-                          </Link>
+                          </HashLink>
                         ))}
                       </div>
                     </div>
