@@ -782,7 +782,7 @@ const Home = () => {
               <img
                 src="/calc-mob.svg"
                 alt="Stake-to-Mine Dashboard Mobile"
-                className="absolute -top-36 sm:top-12 md:-translate-y-[1%] right-0 lg:-right-10 w-64 md:w-64 h-auto z-50"
+                className="absolute -top-36 sm:top-12 md:-translate-y-[1%] right-0 lg:-right-10 w-64 md:w-64 h-auto z-40"
               />
             </div>
           </div>

@@ -94,7 +94,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed top-0 w-full z-20 border-b-[1px] border-zinc-400/50 font-poppins transition-colors ${
+      className={`fixed top-0 w-full z-50 border-b-[1px] border-zinc-400/50 font-poppins transition-colors ${
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
