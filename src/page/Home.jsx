@@ -33,7 +33,6 @@ import {
   TableHeader,
   TableRow,
 } from "../components/Table";
-import { Chart } from "../components/Chart";
 import Marquee from "../components/marquee";
 import {
   Accordion,
@@ -41,6 +40,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../components/Accordion";
+import ChartComponent from "../components/Chart";
 
 const logos = [
   {
@@ -1001,7 +1001,7 @@ const Home = () => {
                   </span>
                 </p>
               </div>
-              {/* <Chart /> */}
+              <ChartComponent />
             </div>
 
             <div className="w-full md:w-1/2 p-4">

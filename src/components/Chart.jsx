@@ -1,94 +1,112 @@
-"use client";
+import React from "react";
+import { Doughnut } from "react-chartjs-2";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
-import { TrendingUp } from "lucide-react";
-import { Pie, PieChart, Sector } from "recharts";
+ChartJS.register(ArcElement, Tooltip, Legend);
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./Card";
-import {
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-} from "./chart-manual";
-const chartData = [
-  { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
-  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
-  { browser: "firefox", visitors: 187, fill: "var(--color-firefox)" },
-  { browser: "edge", visitors: 173, fill: "var(--color-edge)" },
-  { browser: "other", visitors: 90, fill: "var(--color-other)" },
-];
+const DonutChart = () => {
+  const tokenomicsData = [
+    {
+      fund: "Bitcoin Mining",
+      allocation: 42.5,
+      token: "1,700,000,000",
+      imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-darker.svg",
+    },
+    {
+      fund: "Marketing",
+      allocation: 35.0,
+      token: "1,400,000,000",
+      imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-dark.svg",
+    },
+    {
+      fund: "Staking",
+      allocation: 12.5,
+      token: "500,000,000",
+      imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-light.svg",
+    },
+    {
+      fund: "Community",
+      allocation: 10.0,
+      token: "400,000,000",
+      imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-lighter.svg",
+    },
+  ];
 
-const chartConfig = {
-  visitors: {
-    label: "Visitors",
-  },
-  chrome: {
-    label: "Chrome",
-    color: "hsl(var(--chart-1))",
-  },
-  safari: {
-    label: "Safari",
-    color: "hsl(var(--chart-2))",
-  },
-  firefox: {
-    label: "Firefox",
-    color: "hsl(var(--chart-3))",
-  },
-  edge: {
-    label: "Edge",
-    color: "hsl(var(--chart-4))",
-  },
-  other: {
-    label: "Other",
-    color: "hsl(var(--chart-5))",
-  },
+  const data = {
+    labels: tokenomicsData.map((item) => item.fund),
+    datasets: [
+      {
+        label: "Allocation (%)",
+        data: tokenomicsData.map((item) => item.allocation),
+        backgroundColor: [
+          "#ff9431", // Original color
+          "rgba(255, 148, 49, 0.8)", // Slightly lighter
+          "rgba(255, 148, 49, 0.6)", // Even lighter
+          "rgba(255, 148, 49, 0.4)", // Lightest
+        ],
+        hoverOffset: 4,
+      },
+    ],
+  };
+
+  const options = {
+    plugins: {
+      legend: {
+        position: "bottom",
+      },
+      tooltip: {
+        callbacks: {
+          label: function (tooltipItem) {
+            const dataIndex = tooltipItem.dataIndex;
+            const allocation = tokenomicsData[dataIndex].allocation;
+            const token = tokenomicsData[dataIndex].token;
+            return `${allocation}% - ${token} tokens`;
+          },
+        },
+      },
+      // Custom plugin to draw text in the center
+      beforeDraw: function (chart) {
+        const ctx = chart.ctx;
+        ctx.save();
+        const centerX = chart.getDatasetMeta(0).data[0].x;
+        const centerY = chart.getDatasetMeta(0).data[0].y;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+
+        // Draw "Total Supply"
+        ctx.font = "bold 24px Arial";
+        ctx.fillText("4,000,000,000", centerX, centerY - 10);
+
+        // Draw "Total Supply" label
+        ctx.font = "bold 16px Arial";
+        ctx.fillText("Total Supply", centerX, centerY + 20);
+
+        ctx.restore();
+      },
+    },
+    cutout: "70%",
+    hover: {
+      mode: "nearest",
+      onHover: function (event, chartElement) {
+        event.native.target.style.cursor = chartElement.length
+          ? "pointer"
+          : "default";
+      },
+    },
+    animation: {
+      animateScale: true, // Enable scale animation
+    },
+  };
+
+  return (
+    <div className="max-w-md mx-auto relative">
+      <Doughnut data={data} options={options} />
+      <p className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+        <span className="block text-lg font-semibold">Total Supply</span>
+        <span className="block text-2xl font-bold">4,000,000,000</span>
+      </p>
+    </div>
+  );
 };
 
-export function Chart() {
-  return (
-    <Card className="flex flex-col">
-      <CardHeader className="items-center pb-0">
-        <CardTitle>Pie Chart - Donut Active</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
-      </CardHeader>
-      <CardContent className="flex-1 pb-0">
-        <ChartContainer
-          config={chartConfig}
-          className="mx-auto aspect-square max-h-[250px]"
-        >
-          <PieChart>
-            <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent hideLabel />}
-            />
-            <Pie
-              data={chartData}
-              dataKey="visitors"
-              nameKey="browser"
-              innerRadius={60}
-              strokeWidth={5}
-              activeIndex={0}
-              activeShape={({ outerRadius = 0, ...props }) => (
-                <Sector {...props} outerRadius={outerRadius + 10} />
-              )}
-            />
-          </PieChart>
-        </ChartContainer>
-      </CardContent>
-      <CardFooter className="flex-col gap-2 text-sm">
-        <div className="flex items-center gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-        </div>
-        <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
-        </div>
-      </CardFooter>
-    </Card>
-  );
-}
+export default DonutChart;

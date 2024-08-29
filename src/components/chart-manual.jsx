@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: "", dark: ".dark" };
 
-const ChartContext = (React.createContext) | (null > null);
+const ChartContext = React.createContext | (null > null);
 
 function useChart() {
   const context = React.useContext(ChartContext);
@@ -275,7 +275,6 @@ const ChartLegendContent = React.forwardRef(
 );
 ChartLegendContent.displayName = "ChartLegend";
 
-// Helper to extract item config from a payload.
 function getPayloadConfigFromPayload(config, payload, key) {
   if (typeof payload !== "object" || payload === null) {
     return undefined;
@@ -303,11 +302,4 @@ function getPayloadConfigFromPayload(config, payload, key) {
   return configLabelKey in config ? config[configLabelKey] : config[key];
 }
 
-export {
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-  ChartLegend,
-  ChartLegendContent,
-  ChartStyle,
-};
+export { ChartTooltip, ChartTooltipContent, ChartLegend, ChartLegendContent,ChartContainer,ChartStyle };
