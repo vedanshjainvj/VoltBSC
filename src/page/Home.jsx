@@ -17,6 +17,22 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/Card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../components/Carousel";
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "../components/Table";
 
 const logos = [
   {
@@ -61,6 +77,33 @@ const features = [
     title: "No Resale Worries",
     description:
       "The rapid ageing of mining hardware can make resale challenging. Cloud mining keeps the responsibility to upgrade with the mining companies.",
+  },
+];
+
+const tokenomicsData = [
+  {
+    fund: "Bitcoin Mining",
+    allocation: "42.5%",
+    token: "1,700,000,000",
+    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-darker.svg",
+  },
+  {
+    fund: "Marketing",
+    allocation: "35.0%",
+    token: "1,400,000,000",
+    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-dark.svg",
+  },
+  {
+    fund: "Staking",
+    allocation: "12.5%",
+    token: "500,000,000",
+    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-light.svg",
+  },
+  {
+    fund: "Community",
+    allocation: "10.0%",
+    token: "400,000,000",
+    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-lighter.svg",
   },
 ];
 
@@ -594,10 +637,10 @@ const Home = () => {
           <div className="container mx-auto px-4 text-white text-center py-6 w-full ">
             {/* Heading and Description */}
             <div className="text-center  flex flex-col items-center mb-10 pb-6">
-              <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-600 mt-4 mb-2 tracking-wide">
+              <H3 className="heading text-2xl sm:text-4xl font-normal text-zinc-600 mt-4 mb-2 tracking-wide">
                 Join Our $30K Minedrop!
               </H3>
-              <P className="heading max-w-3xl text-base sm:text-base font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
+              <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 Enter our Gleam competition below to stand a chance to win one
                 of 10 prize allocations, each worth $3,000. We aim to reward our
                 community with $30,000 worth of $BTCMTX tokens in total. Terms
@@ -627,6 +670,252 @@ const Home = () => {
                   alt="Join Our $30K Minedrop!"
                   className="w-full h-auto "
                 />
+              </div>
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </div>
+      <div className="mb-8  bg-[#fdfbfa]   ">
+        <MaxWidthWrapper className="mt-4 bg-[#fdfbfa] max-w-8xl px-4 lg:px-0">
+          <div className="container mx-auto px-4 text-white text-center py-6 w-full ">
+            {/* Heading and Description */}
+            <div className="text-center  flex flex-col items-center mb-10 pb-6">
+              <H3 className="heading text-2xl sm:text-4xl font-normal text-zinc-600 mt-4 mb-2 tracking-wide">
+                Roadmap
+              </H3>
+              <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
+                Our project roadmap is set out in four phases, starting with a
+                fair presale to raise the necessary funds for marketing and
+                cloud mining operations and ending with the fully developed
+                Bitcoin Minetrix platform.
+              </P>
+            </div>
+
+            {/* <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4   justify-center items-center mx-4 space-x-7 "> */}
+            <Carousel
+              className="w-full "
+              orientation="horizontal"
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+            >
+              <CarouselContent className="w-full max-w-xs mx-auto py-5">
+                <CarouselItem>
+                  <Card className="p-6 bg-white shadow-md rounded-lg">
+                    <P className=" text-left text-base sm:text-base font-medium uppercase text-zinc-600/60 mt-4 mb-4 tracking-normal">
+                      <span className="font-medium text-primary">Phase 1:</span>{" "}
+                      Presale and token distribution
+                    </P>
+                    <p className="text-2xl text-left font-bold text-primary uppercase mb-4">
+                      Presale
+                    </p>
+                    <ul className="list-disc list-inside text-left">
+                      <li className="text-gray-600 mb-2">
+                        Industry research and consultation
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        Token, presale and staking contract development
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        BTCMTX campaign - presale launch, claim and exchange
+                        listings
+                      </li>
+                      <li className="text-gray-600">
+                        Extensive multimedia marketing campaign launch
+                      </li>
+                    </ul>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="p-6 bg-white shadow-md rounded-lg">
+                    <P className=" text-left text-base sm:text-base font-medium uppercase text-zinc-600/60 mt-4 mb-4 tracking-normal">
+                      <span className="font-medium text-primary">Phase 1:</span>{" "}
+                      Presale and token distribution
+                    </P>
+                    <p className="text-2xl text-left font-bold text-primary uppercase mb-4">
+                      Presale
+                    </p>
+                    <ul className="list-disc list-inside text-left">
+                      <li className="text-gray-600 mb-2">
+                        Industry research and consultation
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        Token, presale and staking contract development
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        BTCMTX campaign - presale launch, claim and exchange
+                        listings
+                      </li>
+                      <li className="text-gray-600">
+                        Extensive multimedia marketing campaign launch
+                      </li>
+                    </ul>
+                  </Card>
+                </CarouselItem>{" "}
+                <CarouselItem>
+                  <Card className="p-6 bg-white shadow-md rounded-lg">
+                    <P className=" text-left text-base sm:text-base font-medium uppercase text-zinc-600/60 mt-4 mb-4 tracking-normal">
+                      <span className="font-medium text-primary">Phase 1:</span>{" "}
+                      Presale and token distribution
+                    </P>
+                    <p className="text-2xl text-left font-bold text-primary uppercase mb-4">
+                      Presale
+                    </p>
+                    <ul className="list-disc list-inside text-left">
+                      <li className="text-gray-600 mb-2">
+                        Industry research and consultation
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        Token, presale and staking contract development
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        BTCMTX campaign - presale launch, claim and exchange
+                        listings
+                      </li>
+                      <li className="text-gray-600">
+                        Extensive multimedia marketing campaign launch
+                      </li>
+                    </ul>
+                  </Card>
+                </CarouselItem>{" "}
+                <CarouselItem>
+                  <Card className="p-6 bg-white shadow-md rounded-lg">
+                    <P className=" text-left text-base sm:text-base font-medium uppercase text-zinc-600/60 mt-4 mb-4 tracking-normal">
+                      <span className="font-medium text-primary">Phase 1:</span>{" "}
+                      Presale and token distribution
+                    </P>
+                    <p className="text-2xl text-left font-bold text-primary uppercase mb-4">
+                      Presale
+                    </p>
+                    <ul className="list-disc list-inside text-left">
+                      <li className="text-gray-600 mb-2">
+                        Industry research and consultation
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        Token, presale and staking contract development
+                      </li>
+                      <li className="text-gray-600 mb-2">
+                        BTCMTX campaign - presale launch, claim and exchange
+                        listings
+                      </li>
+                      <li className="text-gray-600">
+                        Extensive multimedia marketing campaign launch
+                      </li>
+                    </ul>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <div className="flex justify-center gap-2">
+                {" "}
+                <CarouselPrevious />
+                <CarouselNext />
+              </div>
+            </Carousel>
+            {/* </div> */}
+          </div>
+        </MaxWidthWrapper>
+      </div>
+      <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-[#fdfbfa]   ">
+        <MaxWidthWrapper className="mt-16 bg-[#fdfbfa] max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-1/2 p-4">
+              <div className="relative">
+                <div id="chartdiv" style={{ height: "600px" }}>
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      position: "relative",
+                    }}
+                  >
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xlink="http://www.w3.org/1999/xlink"
+                      role="group"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        overflow: "visible",
+                      }}
+                    ></svg>
+                  </div>
+                </div>
+                <p className="text-center mt-4">
+                  <span className="block text-lg font-semibold">
+                    Total Supply
+                  </span>
+                  <span className="block text-2xl font-bold">
+                    4,000,000,000
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div className="w-full md:w-1/2 p-4">
+              <div className="mb-6">
+                <H3 className="heading text-2xl sm:text-4xl font-normal text-zinc-600 mt-4 mb-2 tracking-wide">
+                  Tokenomics
+                </H3>
+                <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
+                  42.5% of the BTCMTX tokens will be used to fund the bitcoin
+                  mining operations of Bitcoin Minetrix. 35% of the tokens will
+                  be allocated to marketing efforts and growing BTCMTX. 12.5% is
+                  for BTCMTX staking rewards until the Bitcoin Minetrix cloud
+                  mining platform is developed. 10% is allocated to community
+                  rewards for active participation in the project.
+                </P>
+
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="">
+                        {" "}
+                        <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-700 tracking-normal">
+                          Funds
+                        </P>
+                      </TableHead>
+                      <TableHead>
+                        {" "}
+                        <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-700 tracking-normal">
+                          % Allocation
+                        </P>
+                      </TableHead>
+                      <TableHead>
+                        {" "}
+                        <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-700 tracking-normal">
+                          Token
+                        </P>
+                      </TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {tokenomicsData.map((data, index) => (
+                      <TableRow key={index}>
+                        <TableCell>
+                          <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 tracking-normal flex justify-start gap-2">
+                            <img className="mr-2" src={data.imgSrc} alt="" />{" "}
+                            {data.fund}{" "}
+                          </P>
+                        </TableCell>
+                        <TableCell>
+                          {" "}
+                          <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 tracking-normal">
+                            {data.allocation}{" "}
+                          </P>
+                        </TableCell>
+                        <TableCell>
+                          {" "}
+                          <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 tracking-normal">
+                            {" "}
+                            {data.token}{" "}
+                          </P>
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
               </div>
             </div>
           </div>
