@@ -4,6 +4,7 @@ import "./assets/font/PolySans-Median.woff2";
 import "./assets/font/PolySans-Slim.woff2";
 import NavBar from "./components/NavBar";
 import Home from "./page/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <main className="flex-1 w-full bg-white">
           <AppRouter />
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );

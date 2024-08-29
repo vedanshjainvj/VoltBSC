@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 import { CgMenuGridO } from "react-icons/cg";
-import { FaHamburger, FaPhone } from "react-icons/fa";
+import { FaHamburger, FaPhone, FaTelegram } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { colorTheme } from "./../constants/colorTheme";
 import { Button } from "./Button";
@@ -14,6 +14,32 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./Sheet";
+import { BsTwitterX } from "react-icons/bs";
+import { PiDiscordLogo } from "react-icons/pi";
+
+const icon = [
+  { icon: <BsTwitterX className="text-zinc-600" size={16} /> },
+  { icon: <FaTelegram className="text-zinc-600" size={16} /> },
+  { icon: <PiDiscordLogo   className="text-zinc-600" size={16} /> },
+  {
+    icon: (
+      <img
+        src="/dex-screener.svg"
+        alt="dex-screener"
+        className="text-zinc-600 bg-zinc-600 rounded-full object-cover h-5 w-auto"
+      />
+    ),
+  },
+  {
+    icon: (
+      <img
+        src="/dextools.svg"
+        alt="dextools"
+        className="object-cover h-4 w-auto"
+      />
+    ),
+  },
+];
 
 const NavBar = () => {
   const location = useLocation();
@@ -105,6 +131,18 @@ const NavBar = () => {
                   )}
                 </div>
               ))}
+
+              <div className="flex flex-wrap justify-center gap-2">
+                {icon.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-center rounded-full px-1.5 py-1  border border-zinc-300"
+                  >
+                    <span>{item.icon}</span>
+                  </div>
+                ))}
+              </div>
+
               <Button
                 bg
                 href="/get-started"

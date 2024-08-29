@@ -35,6 +35,12 @@ import {
 } from "../components/Table";
 import { Chart } from "../components/Chart";
 import Marquee from "../components/marquee";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/Accordion";
 
 const logos = [
   {
@@ -106,6 +112,49 @@ const tokenomicsData = [
     allocation: "10.0%",
     token: "400,000,000",
     imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-lighter.svg",
+  },
+];
+
+const faqs = [
+  {
+    question: "What is Bitcoin mining?",
+    answer:
+      "Bitcoin mining is the process of creating new bitcoin. Thousands of mining rigs compete to solve complex equations that validate Bitcoin transactions and maintain the public ledger, and earn new bitcoin (BTC) for doing so.",
+  },
+  {
+    question: "What is cloud mining?",
+    answer:
+      "Cloud mining is the same process as bitcoin mining but allows individuals to purchase or rent a stake in third-party mining operations, to remove the need to set up their own hardware.",
+  },
+  {
+    question: "Why do we need Bitcoin Minetrix?",
+    answer:
+      "Bitcoin (BTC) mining is prohibitively expensive for the ordinary person, but anybody can buy and stake BTCMTX tokens to secure a share in the BTC Minetrix cloud mining platform. Traditional cloud mining has unfortunately been soured by scams, but Bitcoin Minetrix removes this risk with a decentralized solution to cloud mining.",
+  },
+  {
+    question: "How is this different from traditional cloud mining?",
+    answer:
+      "BTC Minetrix is different from regular cloud mining services in a few important ways. Firstly, by utilizing ERC-20 tokens, we ensure that no money needs to change hands to participate in our cloud mining platform. Secondly, users decide how much bitcoin mining power they want to own by the number of mining credits they earn through BTCMTX token staking. Thirdly, thanks to the smart contract capabilities of the Ethereum blockchain, staking enables us to auto-manage user allocations in the safest and most decentralized way possible for end users.",
+  },
+  {
+    question: "What is the difference between tokens and credits?",
+    answer:
+      "BTCMTX is an ERC-20 utility token that needs to be staked in order to earn mining credits. There is a total supply of 4 billion tokens. Mining credits are non-transferable ERC-20 tokens that need to be burned in exchange for cloud mining power. There is no max cap on mining credit tokens.",
+  },
+  {
+    question: "What are the BTCMTX tokenomics?",
+    answer:
+      "The tokenomics of BTCMTX are as follows:\n- Network: Ethereum\n- Ticker: BTCMTX\n- Total Supply: 4,000,000,000\n- Bitcoin Mining: 1,700,000,000 (42.5%)\n- Marketing: 1,400,000,000 (35.0%)\n- Community: 600,000,000 (15.0%)\n- Staking: 300,000,000 (7.5%)\n- Presale Starting Price: $0.011",
+  },
+  {
+    question: "What are the presale and launch dates?",
+    answer:
+      "The BTC Minetrix presale will run from the last week of September in predefined stages, or until it sells out. Once the presale ends, buyers will be able to claim their BTCMTX from the website at the same time as the token is listed on its first exchange. All claim and launch dates will be announced on our social media channels.",
+  },
+  {
+    question: "Why can't I see my BTCMTX tokens in my wallet?",
+    answer:
+      "If you've purchased BTCMTX tokens in the presale, you'll be able to claim them before we list on our first exchange. Claiming will be available at bitcoinminetrix.com.",
   },
 ];
 
@@ -954,6 +1003,54 @@ const Home = () => {
                   </TableBody>
                 </Table>
               </div>
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </div>
+      <div className="mb-8 border-y-[0.1px] border-zinc-300 bg-[#fdfbfa]   ">
+        <MaxWidthWrapper className="mt-16 bg-[#fdfbfa] max-w-8xl pt-5 px-4 sm:px-8 lg:px-0">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-1/2 p-4">
+              <div className="mb-6">
+                <H3 className="heading text-2xl sm:text-4xl font-normal text-zinc-600 mt-4 mb-2 tracking-wide">
+                  Frequently Asked Questions
+                </H3>
+                <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
+                  The answers to some of your most common questions are listed
+                  here. If you can’t find the info you’re looking for, let our
+                  moderators know in Telegram. You can also contact us{" "}
+                  <span className="text-primary">
+                    atInfo@Bitcoinminetrix.com
+                  </span>
+                </P>
+              </div>{" "}
+              <div className="w-full h-auto">
+                <img
+                  src="/faq.svg"
+                  alt="Bitcoin Minetrix Solution"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+
+            <div className="w-full md:w-1/2 p-4 flex justify-start">
+              <Accordion type="single" collapsible className="w-full">
+                {faqs.map((faq, index) => (
+                  <AccordionItem value={`item-${index}`}>
+                    <AccordionTrigger>
+                      <P className="heading max-w-5xl text-base text-left sm:text-lg font-sans text-zinc-700 tracking-normal">
+                        {faq.question}
+                      </P>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      {" "}
+                      <P className="heading max-w-5xl text-base sm:text-lg font-light text-zinc-700 tracking-normal">
+                        {faq.answer}{" "}
+                      </P>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </div>
         </MaxWidthWrapper>
