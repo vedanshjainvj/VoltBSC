@@ -261,7 +261,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="flex sm:hidden flex-col justify-center max-w-md w-full  rounded-lg bg-white shadow-lg">
-                <Tabs defaultValue="account " className="mx-auto">
+                <Tabs defaultValue="account" className="mx-auto">
                   <H4 className="bg-primary text-white text-center py-4 mb-6 text-lg sm:text-xl font-normal rounded-t-lg px-6">
                     $BTCMTX Claim and Token now LIVE!
                   </H4>
