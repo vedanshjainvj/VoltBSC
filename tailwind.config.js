@@ -45,13 +45,18 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       animation: {
-        marquee: "marquee var(--duration) linear infinite",
-        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        marquee: "marquee 20s linear infinite",
+        "marquee-vertical": "marquee-vertical 20s linear infinite",
+        cloud: "cloud 16s linear infinite",
       },
       keyframes: {
         marquee: {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        cloud: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
         "marquee-vertical": {
           from: { transform: "translateY(0)" },
