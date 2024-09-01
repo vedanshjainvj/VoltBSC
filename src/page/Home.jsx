@@ -60,8 +60,8 @@ const logos = [
     alt: "beincrypto",
   },
   {
-    src: "/bitcoin.svg",
-    alt: "bitcoin",
+    src: "/BNB.svg",
+    alt: "BNB",
   },
 ];
 
@@ -93,54 +93,54 @@ const tokenomicsData = [
     fund: "Private Sale",
     allocation: 15,
     token: "66,000,000",
-    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-darker.svg",
+    imgSrc: "https://BNBminetrix.com/assets/images/ellipse-darker.svg",
   },
   {
     fund: "Affilate & Stacking",
     allocation: 30,
     token: "132,000,000",
-    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-dark.svg",
+    imgSrc: "https://BNBminetrix.com/assets/images/ellipse-dark.svg",
   },
   {
     fund: "Development & Core Charity",
     allocation: 10,
     token: "44,000,000", 
-    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-light.svg",
+    imgSrc: "https://BNBminetrix.com/assets/images/ellipse-light.svg",
   },
   {
     fund: "Public Exchange Listing",
     allocation: 30,
     token: "32,000,000",
-    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-lighter.svg",
+    imgSrc: "https://BNBminetrix.com/assets/images/ellipse-lighter.svg",
   },
   {
     fund: "Creator",
     allocation: 5,
     token: "22,000,000",
-    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-lighter.svg",
+    imgSrc: "https://BNBminetrix.com/assets/images/ellipse-lighter.svg",
   },
 ];
 
 const faqs = [
   {
-    question: "What is Bitcoin mining?",
+    question: "What is BNB mining?",
     answer:
-      "Bitcoin mining is the process of creating new bitcoin. Thousands of mining rigs compete to solve complex equations that validate Bitcoin transactions and maintain the public ledger, and earn new bitcoin (BNB) for doing so.",
+      "BNB mining is the process of creating new BNB. Thousands of mining rigs compete to solve complex equations that validate BNB transactions and maintain the public ledger, and earn new BNB (BNB) for doing so.",
   },
   {
     question: "What is cloud mining?",
     answer:
-      "Cloud mining is the same process as bitcoin mining but allows individuals to purchase or rent a stake in third-party mining operations, to remove the need to set up their own hardware.",
+      "Cloud mining is the same process as BNB mining but allows individuals to purchase or rent a stake in third-party mining operations, to remove the need to set up their own hardware.",
   },
   {
-    question: "Why do we need Bitcoin Minetrix?",
+    question: "Why do we need VOLTBSC?",
     answer:
-      "Bitcoin (BNB) mining is prohibitively expensive for the ordinary person, but anybody can buy and stake VOLTBSC tokens to secure a share in the BNB Minetrix cloud mining platform. Traditional cloud mining has unfortunately been soured by scams, but Bitcoin Minetrix removes this risk with a decentralized solution to cloud mining.",
+      "BNB (BNB) mining is prohibitively expensive for the ordinary person, but anybody can buy and stake VOLTBSC tokens to secure a share in the VOLTBSC cloud mining platform. Traditional cloud mining has unfortunately been soured by scams, but VOLTBSC removes this risk with a decentralized solution to cloud mining.",
   },
   {
     question: "How is this different from traditional cloud mining?",
     answer:
-      "BNB Minetrix is different from regular cloud mining services in a few important ways. Firstly, by utilizing ERC-20 tokens, we ensure that no money needs to change hands to participate in our cloud mining platform. Secondly, users decide how much bitcoin mining power they want to own by the number of mining credits they earn through VOLTBSC token staking. Thirdly, thanks to the smart contract capabilities of the Ethereum blockchain, staking enables us to auto-manage user allocations in the safest and most decentralized way possible for end users.",
+      "VOLTBSC is different from regular cloud mining services in a few important ways. Firstly, by utilizing ERC-20 tokens, we ensure that no money needs to change hands to participate in our cloud mining platform. Secondly, users decide how much BNB mining power they want to own by the number of mining credits they earn through VOLTBSC token staking. Thirdly, thanks to the smart contract capabilities of the Ethereum blockchain, staking enables us to auto-manage user allocations in the safest and most decentralized way possible for end users.",
   },
   {
     question: "What is the difference between tokens and credits?",
@@ -150,17 +150,17 @@ const faqs = [
   {
     question: "What are the VOLTBSC tokenomics?",
     answer:
-      "The tokenomics of VOLTBSC are as follows:\n- Network: Ethereum\n- Ticker: VOLTBSC\n- Total Supply: 4,000,000,000\n- Bitcoin Mining: 1,700,000,000 (42.5%)\n- Marketing: 1,400,000,000 (35.0%)\n- Community: 600,000,000 (15.0%)\n- Staking: 300,000,000 (7.5%)\n- Presale Starting Price: $0.011",
+      "The tokenomics of VOLTBSC are as follows:\n- Network: Ethereum\n- Ticker: VOLTBSC\n- Total Supply: 4,000,000,000\n- BNB Mining: 1,700,000,000 (42.5%)\n- Marketing: 1,400,000,000 (35.0%)\n- Community: 600,000,000 (15.0%)\n- Staking: 300,000,000 (7.5%)\n- Presale Starting Price: $0.011",
   },
   {
     question: "What are the presale and launch dates?",
     answer:
-      "The BNB Minetrix presale will run from the last week of September in predefined stages, or until it sells out. Once the presale ends, buyers will be able to claim their VOLTBSC from the website at the same time as the token is listed on its first exchange. All claim and launch dates will be announced on our social media channels.",
+      "The VOLTBSC presale will run from the last week of September in predefined stages, or until it sells out. Once the presale ends, buyers will be able to claim their VOLTBSC from the website at the same time as the token is listed on its first exchange. All claim and launch dates will be announced on our social media channels.",
   },
   {
     question: "Why can't I see my VOLTBSC tokens in my wallet?",
     answer:
-      "If you've purchased VOLTBSC tokens in the presale, you'll be able to claim them before we list on our first exchange. Claiming will be available at bitcoinminetrix.com.",
+      "If you've purchased VOLTBSC tokens in the presale, you'll be able to claim them before we list on our first exchange. Claiming will be available at BNBminetrix.com.",
   },
 ];
 
@@ -220,16 +220,16 @@ const Home = () => {
               <div className="flex flex-col justify-start text-center  lg:text-left flex-1">
                 <div className="text-3xl sm:text-4xl font-semibold mb-4">
                   <H3 className="block text-3xl sm:text-4xl text-zinc-700">
-                    BITCOIN MINETRIX
+                    VOLT BSC
                   </H3>
                   <span className="flex justify-center sm:justify-start text-zinc-700">
-                    STAKE TOKENS.
-                    <span className="block text-primary">MINE BITCOIN.</span>
+                    STAKE TOKEN.
+                    <span className="block text-primary">MINE BNB.</span>
                   </span>
                 </div>
                 <P className="hidden sm:flex text-base sm:text-lg text-zinc-600 mb-6 text-balance">
-                  One Bitcoin mined in 2013 appreciated 27,300% in 10 years.
-                  Bitcoin Minetrix provides hassle-free BNB mining for the next
+                  One BNB mined in 2013 appreciated 27,300% in 10 years.
+                  VOLTBSC provides hassle-free BNB mining for the next
                   10 years. Buy $VOLTBSC today for as little as $0.0148.
                 </P>
                 <div className="hidden sm:flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
@@ -248,8 +248,8 @@ const Home = () => {
                 </div>
                 <div className="mx-auto sm:ml-20 flex-1 flex-grow w-full hidden sm:flex items-center sm:items-end justify-center">
                   <img
-                    src="/Bitcoin-Cloud-Mining.svg"
-                    alt="Bitcoin-Cloud-Mining"
+                    src="/BNB-Cloud-Mining.svg"
+                    alt="BNB-Cloud-Mining"
                     className="w-full max-w-3xl mx-auto object-cover"
                   />
                 </div>
@@ -396,8 +396,8 @@ const Home = () => {
                     <TabsContent value="info">
                       <div className="flex flex-col items-center justify-center gap-2 px-6 space-y-2 ">
                         <P className="flex text-base max-w-prose text-balance sm:text-lg text-zinc-600 py-2">
-                          One Bitcoin mined in 2013 appreciated 27,300% in 10
-                          years. Bitcoin Minetrix provides hassle-free BNB
+                          One BNB mined in 2013 appreciated 27,300% in 10
+                          years. VOLTBSC provides hassle-free BNB
                           mining for the next 10 years. Buy $VOLTBSC today for as
                           little as $0.0148.
                         </P>
@@ -503,14 +503,14 @@ const Home = () => {
               <div className="row flex justify-center">
                 <div className="col-md-10 offset-md-1 text-center">
                   <p className=" font-medium text-lg text-primary font-poppins">
-                    BITCOIN MINING made easy
+                    BNB MINING made easy
                   </p>
                   <H3 className="heading text-2xl sm:text-3xl text-zinc-500 mt-4 mb-6 tracking-wide font-poppins">
-                    What is Bitcoin Minetrix?
+                    What is VOLTBSC?
                   </H3>
                   <p className=" text-base text-zinc-600 mb-4">
-                    Bitcoin Minetrix is a tokenized cloud mining platform that
-                    allows everyday people to mine bitcoin (BNB) in a
+                    VOLTBSC is a tokenized cloud mining platform that
+                    allows everyday people to mine BNB (BNB) in a
                     decentralized way. We&apos;re tokenizing cloud mining to
                     ensure a secure and transparent experience.
                   </p>
@@ -534,7 +534,7 @@ const Home = () => {
               <div className="w-full h-full">
                 <img
                   src="/animate1.svg"
-                  alt="Bitcoin Minetrix Solution"
+                  alt="VOLTBSC Solution"
                   className="object-cover w-full h-full"
                 />
               </div>
@@ -546,16 +546,16 @@ const Home = () => {
                 DECENTRALIZED CLOUD MINING
               </p>
               <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-600 mt-4 mb-6 tracking-wide">
-                The Bitcoin Minetrix Solution
+                The VOLTBSC Solution
               </H3>
               <P className="heading text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
-                Bitcoin Minetrix presents a reliable cloud mining platform for
+                VOLTBSC presents a reliable cloud mining platform for
                 everyday crypto users that aims to fix the problem of high
                 hardware costs and deceptive scams that have deterred people
                 from BNB mining.
               </P>
               <P className="heading text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
-                With Bitcoin Minetrix, these concerns are a thing of the past.
+                With VOLTBSC, these concerns are a thing of the past.
                 Users can simply stake their VOLTBSC tokens to gain cloud mining
                 credits. This decentralized method safeguards users' interests,
                 ensuring a secure and transparent mining experience.
@@ -572,11 +572,11 @@ const Home = () => {
               </H3>
               <P className="heading text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 The Stake-to-Mine concept is a novel idea that promises to bring
-                bitcoin mining back into the realm of possibility for ordinary
+                BNB mining back into the realm of possibility for ordinary
                 crypto aficionados, for several reasons.
               </P>
               <P className="heading text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
-                Users of Bitcoin Minetrix need only an Ethereum-compatible
+                Users of VOLTBSC need only an Ethereum-compatible
                 wallet such as MetaMask to purchase and stake VOLTBSC tokens,
                 making things very simple. Staking VOLTBSC earns non-tradable
                 ERC-20 token credits that must be burned in exchange for BNB
@@ -605,7 +605,7 @@ const Home = () => {
               <div className="w-full h-full">
                 {/* <img
                   src="/animate1.svg"
-                  alt="Bitcoin Minetrix Solution"
+                  alt="VOLTBSC Solution"
                   className="object-cover w-full h-full"
                 /> */}
                 <ContentComponent />
@@ -621,7 +621,7 @@ const Home = () => {
                 Reasons To Cloud Mine BNB
               </H3>
               <P className="heading text-base sm:text-base font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
-                Bitcoin Minetrix presents a reliable cloud mining platform for
+                VOLTBSC presents a reliable cloud mining platform for
                 everyday crypto users that aims to fix the problem of high
                 hardware costs and deceptive scams that have deterred people
                 from BNB mining.
@@ -660,7 +660,7 @@ const Home = () => {
               <P className="heading max-w-3xl text-base sm:text-base font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 Purchase VOLTBSC tokens using ETH, USDT, BNB or bank card today
                 and stake them to earn cloud mining credits. Burn credits to
-                increase your bitcoin mining power.
+                increase your BNB mining power.
               </P>
             </div>
 
@@ -741,7 +741,7 @@ const Home = () => {
                     <CardContent>
                       <CardDescription className="text-base text-gray-600">
                         Your staked VOLTBSC will generate mining credits over
-                        time. Burn mining credits to purchase bitcoin cloud
+                        time. Burn mining credits to purchase BNB cloud
                         mining power. The more credits you burn, the more BNB
                         you&#39;ll earn through cloud mining.
                       </CardDescription>
@@ -760,28 +760,28 @@ const Home = () => {
           <div className="text-white text-center py-6 w-full mx-auto">
             <div className="flex flex-col items-center">
               <H3 className="text-2xl sm:text-4xl font-light text-zinc-100 mt-4 mb-3 tracking-wide">
-                Bitcoin Minetrix Stake-to-Mine Dashboard
+                VOLTBSC Stake-to-Mine Dashboard
               </H3>
               <P className="max-w-4xl text-base sm:text-lg font-semibold text-zinc-100 mb-4 tracking-normal">
                 Manage all your VOLTBSC tokens and mining credits in one place
-                with the Bitcoin Minetrix dashboard. Gain cloud mining power
+                with the VOLTBSC dashboard. Gain cloud mining power
                 using your mining credits earned through staking.
               </P>
             </div>
 
             <div className="relative max-w-4xl mx-auto flex justify-center mt-10 lg:mt-16 pb-3 origin-center">
               <img
-                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
+                src="https://BNBminetrix.com/assets/images/cal-left.svg"
                 alt="Cloud"
                 className="hidden lg:block absolute left-0 top-0 w-full h-auto "
               />
               <img
-                src="https://bitcoinminetrix.com/assets/images/svg-icons/bitcoin-mining-calculator.svg"
+                src="https://BNBminetrix.com/assets/images/svg-icons/BNB-mining-calculator.svg"
                 alt="Stake-to-Mine Dashboard"
                 className="w-full h-auto z-10"
               />
               <img
-                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
+                src="https://BNBminetrix.com/assets/images/cal-left.svg"
                 alt="Cloud"
                 className="hidden lg:block absolute right-0 top-0 w-24 h-auto lg:w-32"
               />{" "}
@@ -816,10 +816,10 @@ const Home = () => {
               <div className="flex flex-1 flex-grow mb-8 lg:mb-0 px-3">
                 <iframe
                   id="frameAirdrop"
-                  src="https://gleam.io/FMTuv/bitcoin-minetrix-30000-minedrop"
+                  src="https://gleam.io/FMTuv/BNB-minetrix-30000-minedrop"
                   allowFullScreen
                   allow="attribution-reporting"
-                  title="Bitcoin Minetrix $30,000 Minedrop"
+                  title="VOLTBSC $30,000 Minedrop"
                   className="w-full h-96 border border-gray-700 rounded-md"
                   style={{ zIndex: 1 }}
                 ></iframe>
@@ -828,7 +828,7 @@ const Home = () => {
               {/* Image */}
               <div className=" flex justify-center">
                 <img
-                  src="/bitcoin-mining-competition.svg"
+                  src="/BNB-mining-competition.svg"
                   alt="Join Our $30K Minedrop!"
                   className="w-full h-auto "
                 />
@@ -852,7 +852,7 @@ const Home = () => {
                 Our project roadmap is set out in four phases, starting with a
                 fair presale to raise the necessary funds for marketing and
                 cloud mining operations and ending with the fully developed
-                Bitcoin Minetrix platform.
+                VOLTBSC platform.
               </P>
             </div>
 
@@ -1078,10 +1078,10 @@ const Home = () => {
                   Tokenomics
                 </H3>
                 <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
-                  42.5% of the VOLTBSC tokens will be used to fund the bitcoin
-                  mining operations of Bitcoin Minetrix. 35% of the tokens will
+                  42.5% of the VOLTBSC tokens will be used to fund the BNB
+                  mining operations of VOLTBSC. 35% of the tokens will
                   be allocated to marketing efforts and growing VOLTBSC. 12.5% is
-                  for VOLTBSC staking rewards until the Bitcoin Minetrix cloud
+                  for VOLTBSC staking rewards until the VOLTBSC cloud
                   mining platform is developed. 10% is allocated to community
                   rewards for active participation in the project.
                 </P>
@@ -1156,14 +1156,14 @@ const Home = () => {
                   here. If you can’t find the info you’re looking for, let our
                   moderators know in Telegram. You can also contact us{" "}
                   <span className="text-primary">
-                    atInfo@Bitcoinminetrix.com
+                    atInfo@BNBminetrix.com
                   </span>
                 </P>
               </div>{" "}
               <div className="w-full h-auto">
                 <img
                   src="/faq.svg"
-                  alt="Bitcoin Minetrix Solution"
+                  alt="VOLTBSC Solution"
                   className="object-cover w-full h-full"
                 />
               </div>
