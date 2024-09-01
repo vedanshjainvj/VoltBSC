@@ -218,11 +218,11 @@ const Home = () => {
           <div id="home" className="w-full relative pt-20 lg:pt-28 py-10 ">
             <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="flex flex-col justify-start text-center  lg:text-left flex-1">
-                <div className="text-3xl sm:text-4xl font-semibold mb-4">
-                  <H3 className="block text-3xl sm:text-4xl text-zinc-700">
-                    VOLT BSC
+                <div className="text-3xl sm:text-4xl font-medium mb-4">
+                  <H3 className="block sm:text-5xl text-3xl  text-zinc-700">
+                    VOLT BSC 
                   </H3>
-                  <span className="flex justify-center sm:justify-start text-zinc-700">
+                  <span className="flex justify-center text-2xl sm:text-5xl sm:justify-start text-zinc-700">
                     STAKE TOKEN.
                     <span className="block text-primary">MINE BNB.</span>
                   </span>
