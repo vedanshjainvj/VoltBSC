@@ -125,7 +125,7 @@ const faqs = [
   {
     question: "What is Bitcoin mining?",
     answer:
-      "Bitcoin mining is the process of creating new bitcoin. Thousands of mining rigs compete to solve complex equations that validate Bitcoin transactions and maintain the public ledger, and earn new bitcoin (BTC) for doing so.",
+      "Bitcoin mining is the process of creating new bitcoin. Thousands of mining rigs compete to solve complex equations that validate Bitcoin transactions and maintain the public ledger, and earn new bitcoin (BNB) for doing so.",
   },
   {
     question: "What is cloud mining?",
@@ -135,12 +135,12 @@ const faqs = [
   {
     question: "Why do we need Bitcoin Minetrix?",
     answer:
-      "Bitcoin (BTC) mining is prohibitively expensive for the ordinary person, but anybody can buy and stake VOLTBSC tokens to secure a share in the BTC Minetrix cloud mining platform. Traditional cloud mining has unfortunately been soured by scams, but Bitcoin Minetrix removes this risk with a decentralized solution to cloud mining.",
+      "Bitcoin (BNB) mining is prohibitively expensive for the ordinary person, but anybody can buy and stake VOLTBSC tokens to secure a share in the BNB Minetrix cloud mining platform. Traditional cloud mining has unfortunately been soured by scams, but Bitcoin Minetrix removes this risk with a decentralized solution to cloud mining.",
   },
   {
     question: "How is this different from traditional cloud mining?",
     answer:
-      "BTC Minetrix is different from regular cloud mining services in a few important ways. Firstly, by utilizing ERC-20 tokens, we ensure that no money needs to change hands to participate in our cloud mining platform. Secondly, users decide how much bitcoin mining power they want to own by the number of mining credits they earn through VOLTBSC token staking. Thirdly, thanks to the smart contract capabilities of the Ethereum blockchain, staking enables us to auto-manage user allocations in the safest and most decentralized way possible for end users.",
+      "BNB Minetrix is different from regular cloud mining services in a few important ways. Firstly, by utilizing ERC-20 tokens, we ensure that no money needs to change hands to participate in our cloud mining platform. Secondly, users decide how much bitcoin mining power they want to own by the number of mining credits they earn through VOLTBSC token staking. Thirdly, thanks to the smart contract capabilities of the Ethereum blockchain, staking enables us to auto-manage user allocations in the safest and most decentralized way possible for end users.",
   },
   {
     question: "What is the difference between tokens and credits?",
@@ -155,7 +155,7 @@ const faqs = [
   {
     question: "What are the presale and launch dates?",
     answer:
-      "The BTC Minetrix presale will run from the last week of September in predefined stages, or until it sells out. Once the presale ends, buyers will be able to claim their VOLTBSC from the website at the same time as the token is listed on its first exchange. All claim and launch dates will be announced on our social media channels.",
+      "The BNB Minetrix presale will run from the last week of September in predefined stages, or until it sells out. Once the presale ends, buyers will be able to claim their VOLTBSC from the website at the same time as the token is listed on its first exchange. All claim and launch dates will be announced on our social media channels.",
   },
   {
     question: "Why can't I see my VOLTBSC tokens in my wallet?",
@@ -229,7 +229,7 @@ const Home = () => {
                 </div>
                 <P className="hidden sm:flex text-base sm:text-lg text-zinc-600 mb-6 text-balance">
                   One Bitcoin mined in 2013 appreciated 27,300% in 10 years.
-                  Bitcoin Minetrix provides hassle-free BTC mining for the next
+                  Bitcoin Minetrix provides hassle-free BNB mining for the next
                   10 years. Buy $VOLTBSC today for as little as $0.0148.
                 </P>
                 <div className="hidden sm:flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
@@ -397,7 +397,7 @@ const Home = () => {
                       <div className="flex flex-col items-center justify-center gap-2 px-6 space-y-2 ">
                         <P className="flex text-base max-w-prose text-balance sm:text-lg text-zinc-600 py-2">
                           One Bitcoin mined in 2013 appreciated 27,300% in 10
-                          years. Bitcoin Minetrix provides hassle-free BTC
+                          years. Bitcoin Minetrix provides hassle-free BNB
                           mining for the next 10 years. Buy $VOLTBSC today for as
                           little as $0.0148.
                         </P>
@@ -510,7 +510,7 @@ const Home = () => {
                   </H3>
                   <p className=" text-base text-zinc-600 mb-4">
                     Bitcoin Minetrix is a tokenized cloud mining platform that
-                    allows everyday people to mine bitcoin (BTC) in a
+                    allows everyday people to mine bitcoin (BNB) in a
                     decentralized way. We&apos;re tokenizing cloud mining to
                     ensure a secure and transparent experience.
                   </p>
@@ -518,7 +518,7 @@ const Home = () => {
                     We&apos;re solving a huge problem by removing the risk of
                     third-party cloud mining scams and putting the control into
                     the hands of token holders. Simply stake VOLTBSC to earn
-                    credits, and use these to mine BTC.
+                    credits, and use these to mine BNB.
                   </p>
                 </div>
               </div>
@@ -552,7 +552,7 @@ const Home = () => {
                 Bitcoin Minetrix presents a reliable cloud mining platform for
                 everyday crypto users that aims to fix the problem of high
                 hardware costs and deceptive scams that have deterred people
-                from BTC mining.
+                from BNB mining.
               </P>
               <P className="heading text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 With Bitcoin Minetrix, these concerns are a thing of the past.
@@ -568,7 +568,7 @@ const Home = () => {
                 How it works
               </p>
               <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-600 mt-4 mb-6 tracking-wide">
-                Stake-To-Mine BTC Mining
+                Stake-To-Mine BNB Mining
               </H3>
               <P className="heading text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 The Stake-to-Mine concept is a novel idea that promises to bring
@@ -579,7 +579,7 @@ const Home = () => {
                 Users of Bitcoin Minetrix need only an Ethereum-compatible
                 wallet such as MetaMask to purchase and stake VOLTBSC tokens,
                 making things very simple. Staking VOLTBSC earns non-tradable
-                ERC-20 token credits that must be burned in exchange for BTC
+                ERC-20 token credits that must be burned in exchange for BNB
                 cloud mining power.
               </P>
             </div>
@@ -589,7 +589,7 @@ const Home = () => {
               <div className="w-full h-full">
                 <img
                   src="/animate1.svg"
-                  alt="Stake-To-Mine BTC Mining"
+                  alt="Stake-To-Mine BNB Mining"
                   className="object-cover w-full h-auto"
                 />
               </div>
@@ -618,13 +618,13 @@ const Home = () => {
                 The Case For Mining
               </p>
               <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-600 mt-4 mb-6 tracking-wide">
-                Reasons To Cloud Mine BTC
+                Reasons To Cloud Mine BNB
               </H3>
               <P className="heading text-base sm:text-base font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 Bitcoin Minetrix presents a reliable cloud mining platform for
                 everyday crypto users that aims to fix the problem of high
                 hardware costs and deceptive scams that have deterred people
-                from BTC mining.
+                from BNB mining.
               </P>
               <div className="flex flex-col items-center justify-start gap-4">
                 <div className=" flex flex-col items-start justify-start gap-1">
@@ -655,7 +655,7 @@ const Home = () => {
                 How To Buy
               </p>
               <H3 className="heading text-2xl sm:text-3xl font-normal text-zinc-600 mt-4 mb-6 tracking-wide">
-                How To Access BTC Mining
+                How To Access BNB Mining
               </H3>
               <P className="heading max-w-3xl text-base sm:text-base font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 Purchase VOLTBSC tokens using ETH, USDT, BNB or bank card today
@@ -728,13 +728,13 @@ const Home = () => {
                     <CardHeader className="text-left">
                       <img
                         className="w-12 h-12  mb-4"
-                        alt="Earn BTC"
+                        alt="Earn BNB"
                         src="/redeem.svg"
                       />
                       <CardTitle className="text-lg font-semibold text-gray-800">
                         <P className="heading text-lg sm:text-xl font-semibold text-zinc-600 tracking-wide">
                           {" "}
-                          Earn BTC{" "}
+                          Earn BNB{" "}
                         </P>
                       </CardTitle>
                     </CardHeader>
@@ -742,7 +742,7 @@ const Home = () => {
                       <CardDescription className="text-base text-gray-600">
                         Your staked VOLTBSC will generate mining credits over
                         time. Burn mining credits to purchase bitcoin cloud
-                        mining power. The more credits you burn, the more BTC
+                        mining power. The more credits you burn, the more BNB
                         you&#39;ll earn through cloud mining.
                       </CardDescription>
                     </CardContent>
