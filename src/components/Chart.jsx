@@ -107,9 +107,9 @@ const DonutChart = () => {
   return (
     <div className="max-w-md flex items-center justify-center mx-auto relative">
       <Doughnut data={data} options={options} />
-      <p className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-        <span className="block text-lg font-semibold">Total Supply</span>
-        <span className="block text-2xl font-bold">44,000,000</span>
+      <p className="absolute inset-0 flex flex-col -mt-16 items-center justify-center pointer-events-none">
+        <span className="block text-sm sm:text-lg font-semibold">Total Supply</span>
+        <span className="block text-xl sm:text-2xl font-bold">44,000,000</span>
       </p>
     </div>
   );

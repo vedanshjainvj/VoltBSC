@@ -202,7 +202,7 @@ const Home = () => {
               <img src="/cloud.svg" alt="cloud" className="w-48  h-auto" />
             </Marquee>
           </div>
-          <div className=" absolute top-20 -ml-[64rem]  w-[100vw]">
+          <div className="absolute top-20 -ml-[64rem] w-[100vw]">
             <Marquee
               cloud={true}
               className="w-full "
@@ -248,7 +248,7 @@ const Home = () => {
                 </div>
                 <div className="mx-auto sm:ml-20 flex-1 flex-grow w-full hidden sm:flex items-center sm:items-end justify-center">
                   <img
-                    src="/BNB-Cloud-Mining.svg"
+                    src="/Bitcoin-Cloud-Mining.svg"
                     alt="BNB-Cloud-Mining"
                     className="w-full max-w-3xl mx-auto object-cover"
                   />
@@ -770,18 +770,18 @@ const Home = () => {
             </div>
 
             <div className="relative max-w-4xl mx-auto flex justify-center mt-10 lg:mt-16 pb-3 origin-center">
-              <img
-                src="https://BNBminetrix.com/assets/images/cal-left.svg"
+            <img
+                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
                 alt="Cloud"
                 className="hidden lg:block absolute left-0 top-0 w-full h-auto "
               />
               <img
-                src="https://BNBminetrix.com/assets/images/svg-icons/BNB-mining-calculator.svg"
+                src="https://bitcoinminetrix.com/assets/images/svg-icons/bitcoin-mining-calculator.svg"
                 alt="Stake-to-Mine Dashboard"
                 className="w-full h-auto z-10"
               />
               <img
-                src="https://BNBminetrix.com/assets/images/cal-left.svg"
+                src="https://bitcoinminetrix.com/assets/images/cal-left.svg"
                 alt="Cloud"
                 className="hidden lg:block absolute right-0 top-0 w-24 h-auto lg:w-32"
               />{" "}
@@ -814,12 +814,12 @@ const Home = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2   justify-center items-center">
               {/* Iframe */}
               <div className="flex flex-1 flex-grow mb-8 lg:mb-0 px-3">
-                <iframe
+              <iframe
                   id="frameAirdrop"
-                  src="https://gleam.io/FMTuv/BNB-minetrix-30000-minedrop"
+                  src="https://gleam.io/FMTuv/bitcoin-minetrix-30000-minedrop"
                   allowFullScreen
                   allow="attribution-reporting"
-                  title="VOLTBSC $30,000 Minedrop"
+                  title="Bitcoin Minetrix $30,000 Minedrop"
                   className="w-full h-96 border border-gray-700 rounded-md"
                   style={{ zIndex: 1 }}
                 ></iframe>
@@ -827,8 +827,8 @@ const Home = () => {
 
               {/* Image */}
               <div className=" flex justify-center">
-                <img
-                  src="/BNB-mining-competition.svg"
+              <img
+                  src="/bitcoin-mining-competition.svg"
                   alt="Join Our $30K Minedrop!"
                   className="w-full h-auto "
                 />
@@ -896,25 +896,30 @@ const Home = () => {
                 <CarouselItem>
                   <Card className="p-6 bg-white shadow-md rounded-lg">
                     <P className=" text-left text-base sm:text-base font-medium uppercase text-zinc-600/60 mt-4 mb-4 tracking-normal">
-                      <span className="font-medium text-primary">Phase 1:</span>{" "}
-                      Presale and token distribution
+                      <span className="font-medium text-primary">Phase 2:</span>{" "}
+                      PLATFORM DEVELOPMENT AND FACILITY SETUP
                     </P>
                     <p className="text-2xl text-left font-bold text-primary uppercase mb-4">
-                      Presale
+                      DEVELOPMENT
                     </p>
                     <ul className="list-disc list-inside text-left">
                       <li className="text-gray-600 mb-2">
-                        Industry research and consultation
+                        App and desktop software developemnt
                       </li>
                       <li className="text-gray-600 mb-2">
-                        Token, presale and staking contract development
+                        Team Expansion
                       </li>
                       <li className="text-gray-600 mb-2">
-                        VOLTBSC campaign - presale launch, claim and exchange
-                        listings
+                        Negotiations and cloud mining congiomerates
                       </li>
                       <li className="text-gray-600">
-                        Extensive multimedia marketing campaign launch
+                        Stake-To-Mine contract development
+                      </li>
+                      <li className="text-gray-600">
+                        Additonal CEX listings
+                      </li>
+                      <li className="text-gray-600">
+                        Stake-to-Earn VOLTBSC tokens
                       </li>
                     </ul>
                   </Card>
@@ -922,25 +927,27 @@ const Home = () => {
                 <CarouselItem>
                   <Card className="p-6 bg-white shadow-md rounded-lg">
                     <P className=" text-left text-base sm:text-base font-medium uppercase text-zinc-600/60 mt-4 mb-4 tracking-normal">
-                      <span className="font-medium text-primary">Phase 1:</span>{" "}
-                      Presale and token distribution
+                      <span className="font-medium text-primary">Phase 3:</span>{" "}
+                      PUBLIC LAUNCH OF STAKE-TO-MINE PLATFORM
                     </P>
                     <p className="text-2xl text-left font-bold text-primary uppercase mb-4">
-                      Presale
+                      LAUNCH
                     </p>
                     <ul className="list-disc list-inside text-left">
                       <li className="text-gray-600 mb-2">
-                        Industry research and consultation
+                        Launch of Stake-to-Mine mobile and desktop dashboard
                       </li>
                       <li className="text-gray-600 mb-2">
-                        Token, presale and staking contract development
+                        Burn mining credits for hash power live
                       </li>
                       <li className="text-gray-600 mb-2">
-                        VOLTBSC campaign - presale launch, claim and exchange
-                        listings
+                        First mined BNB to wallet withdrawals
                       </li>
                       <li className="text-gray-600">
-                        Extensive multimedia marketing campaign launch
+                        Further negotiations with external cloud mining conglomerates
+                      </li>
+                      <li className="text-gray-600">
+                        Extend marketing including affilates and influencers
                       </li>
                     </ul>
                   </Card>
@@ -948,26 +955,23 @@ const Home = () => {
                 <CarouselItem>
                   <Card className="p-6 bg-white shadow-md rounded-lg">
                     <P className=" text-left text-base sm:text-base font-medium uppercase text-zinc-600/60 mt-4 mb-4 tracking-normal">
-                      <span className="font-medium text-primary">Phase 1:</span>{" "}
-                      Presale and token distribution
+                      <span className="font-medium text-primary">Phase 4:</span>{" "}
+                      MASS ADOPTION OF THE VOLTBSC TOKEN
                     </P>
                     <p className="text-2xl text-left font-bold text-primary uppercase mb-4">
-                      Presale
+                     MASS ADOPTION
                     </p>
                     <ul className="list-disc list-inside text-left">
                       <li className="text-gray-600 mb-2">
-                        Industry research and consultation
+                        Continues marketing to push market cap growth
                       </li>
                       <li className="text-gray-600 mb-2">
-                        Token, presale and staking contract development
+                       Cloud mining rental expansion
                       </li>
                       <li className="text-gray-600 mb-2">
-                        VOLTBSC campaign - presale launch, claim and exchange
-                        listings
+                        Disrupt and reshape BNB cloud mining space
                       </li>
-                      <li className="text-gray-600">
-                        Extensive multimedia marketing campaign launch
-                      </li>
+                    
                     </ul>
                   </Card>
                 </CarouselItem>{" "}
@@ -1156,7 +1160,7 @@ const Home = () => {
                   here. If you can’t find the info you’re looking for, let our
                   moderators know in Telegram. You can also contact us{" "}
                   <span className="text-primary">
-                    atInfo@BNBminetrix.com
+                    atInfo@VOLTBSC.com
                   </span>
                 </P>
               </div>{" "}

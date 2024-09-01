@@ -13,7 +13,7 @@ const ContentComponent = () => {
 
           <div className="bg-primary rounded-tl-3xl flex items-center justify-center text-white text-center p-4">
             <p className="heading text-base sm:text-base font-medium text-zinc-50 mt-4 mb-4 tracking-normal">
-              Bitcoin Minetrix
+              VOLTBSC
             </p>
           </div>
 

@@ -83,7 +83,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto mt-8 flex flex-col md:flex-row items-center justify-between">
         <div className="text-center md:text-left mb-6 md:mb-0">
           <P className="text-sm font-medium text-zinc-600 mb-4">
-            Copyright 2023 BTC Minetrix. All Rights Reserved.
+            Copyright 2024 VOLTBSC. All Rights Reserved.
           </P>
           <P className="text-sm font-medium max-w-2xl text-zinc-600">
             Disclaimer: Cryptocurrency may be unregulated in your jurisdiction.
