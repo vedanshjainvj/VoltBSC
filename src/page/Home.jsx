@@ -90,27 +90,33 @@ const features = [
 
 const tokenomicsData = [
   {
-    fund: "Bitcoin Mining",
-    allocation: "42.5%",
-    token: "1,700,000,000",
+    fund: "Private Sale",
+    allocation: 15,
+    token: "66,000,000",
     imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-darker.svg",
   },
   {
-    fund: "Marketing",
-    allocation: "35.0%",
-    token: "1,400,000,000",
+    fund: "Affilate & Stacking",
+    allocation: 30,
+    token: "132,000,000",
     imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-dark.svg",
   },
   {
-    fund: "Staking",
-    allocation: "12.5%",
-    token: "500,000,000",
+    fund: "Development & Core Charity",
+    allocation: 10,
+    token: "44,000,000", 
     imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-light.svg",
   },
   {
-    fund: "Community",
-    allocation: "10.0%",
-    token: "400,000,000",
+    fund: "Public Exchange Listing",
+    allocation: 30,
+    token: "32,000,000",
+    imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-lighter.svg",
+  },
+  {
+    fund: "Creator",
+    allocation: 5,
+    token: "22,000,000",
     imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-lighter.svg",
   },
 ];
@@ -129,32 +135,32 @@ const faqs = [
   {
     question: "Why do we need Bitcoin Minetrix?",
     answer:
-      "Bitcoin (BTC) mining is prohibitively expensive for the ordinary person, but anybody can buy and stake BTCMTX tokens to secure a share in the BTC Minetrix cloud mining platform. Traditional cloud mining has unfortunately been soured by scams, but Bitcoin Minetrix removes this risk with a decentralized solution to cloud mining.",
+      "Bitcoin (BTC) mining is prohibitively expensive for the ordinary person, but anybody can buy and stake VOLTBSC tokens to secure a share in the BTC Minetrix cloud mining platform. Traditional cloud mining has unfortunately been soured by scams, but Bitcoin Minetrix removes this risk with a decentralized solution to cloud mining.",
   },
   {
     question: "How is this different from traditional cloud mining?",
     answer:
-      "BTC Minetrix is different from regular cloud mining services in a few important ways. Firstly, by utilizing ERC-20 tokens, we ensure that no money needs to change hands to participate in our cloud mining platform. Secondly, users decide how much bitcoin mining power they want to own by the number of mining credits they earn through BTCMTX token staking. Thirdly, thanks to the smart contract capabilities of the Ethereum blockchain, staking enables us to auto-manage user allocations in the safest and most decentralized way possible for end users.",
+      "BTC Minetrix is different from regular cloud mining services in a few important ways. Firstly, by utilizing ERC-20 tokens, we ensure that no money needs to change hands to participate in our cloud mining platform. Secondly, users decide how much bitcoin mining power they want to own by the number of mining credits they earn through VOLTBSC token staking. Thirdly, thanks to the smart contract capabilities of the Ethereum blockchain, staking enables us to auto-manage user allocations in the safest and most decentralized way possible for end users.",
   },
   {
     question: "What is the difference between tokens and credits?",
     answer:
-      "BTCMTX is an ERC-20 utility token that needs to be staked in order to earn mining credits. There is a total supply of 4 billion tokens. Mining credits are non-transferable ERC-20 tokens that need to be burned in exchange for cloud mining power. There is no max cap on mining credit tokens.",
+      "VOLTBSC is an ERC-20 utility token that needs to be staked in order to earn mining credits. There is a total supply of 4 billion tokens. Mining credits are non-transferable ERC-20 tokens that need to be burned in exchange for cloud mining power. There is no max cap on mining credit tokens.",
   },
   {
-    question: "What are the BTCMTX tokenomics?",
+    question: "What are the VOLTBSC tokenomics?",
     answer:
-      "The tokenomics of BTCMTX are as follows:\n- Network: Ethereum\n- Ticker: BTCMTX\n- Total Supply: 4,000,000,000\n- Bitcoin Mining: 1,700,000,000 (42.5%)\n- Marketing: 1,400,000,000 (35.0%)\n- Community: 600,000,000 (15.0%)\n- Staking: 300,000,000 (7.5%)\n- Presale Starting Price: $0.011",
+      "The tokenomics of VOLTBSC are as follows:\n- Network: Ethereum\n- Ticker: VOLTBSC\n- Total Supply: 4,000,000,000\n- Bitcoin Mining: 1,700,000,000 (42.5%)\n- Marketing: 1,400,000,000 (35.0%)\n- Community: 600,000,000 (15.0%)\n- Staking: 300,000,000 (7.5%)\n- Presale Starting Price: $0.011",
   },
   {
     question: "What are the presale and launch dates?",
     answer:
-      "The BTC Minetrix presale will run from the last week of September in predefined stages, or until it sells out. Once the presale ends, buyers will be able to claim their BTCMTX from the website at the same time as the token is listed on its first exchange. All claim and launch dates will be announced on our social media channels.",
+      "The BTC Minetrix presale will run from the last week of September in predefined stages, or until it sells out. Once the presale ends, buyers will be able to claim their VOLTBSC from the website at the same time as the token is listed on its first exchange. All claim and launch dates will be announced on our social media channels.",
   },
   {
-    question: "Why can't I see my BTCMTX tokens in my wallet?",
+    question: "Why can't I see my VOLTBSC tokens in my wallet?",
     answer:
-      "If you've purchased BTCMTX tokens in the presale, you'll be able to claim them before we list on our first exchange. Claiming will be available at bitcoinminetrix.com.",
+      "If you've purchased VOLTBSC tokens in the presale, you'll be able to claim them before we list on our first exchange. Claiming will be available at bitcoinminetrix.com.",
   },
 ];
 
@@ -224,7 +230,7 @@ const Home = () => {
                 <P className="hidden sm:flex text-base sm:text-lg text-zinc-600 mb-6 text-balance">
                   One Bitcoin mined in 2013 appreciated 27,300% in 10 years.
                   Bitcoin Minetrix provides hassle-free BTC mining for the next
-                  10 years. Buy $BTCMTX today for as little as $0.0148.
+                  10 years. Buy $VOLTBSC today for as little as $0.0148.
                 </P>
                 <div className="hidden sm:flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                   <Button
@@ -252,13 +258,13 @@ const Home = () => {
                 <div className="hidden sm:flex flex-col justify-center max-w-md w-full bg-white shadow-lg rounded-lg">
                   {" "}
                   <H4 className="bg-primary text-white text-center py-4 mb-6 text-lg sm:text-xl font-normal rounded-t-lg px-6">
-                    $BTCMTX Claim and Token now LIVE!
+                    $VOLTBSC Claim and Token now LIVE!
                   </H4>
                   <div className="flex flex-col items-center justify-center gap-2 px-6 space-y-2">
                     <P className="text-zinc-700 text-center  text-base">
-                      You can now claim your $BTCMTX tokens. Plus, stake your
+                      You can now claim your $VOLTBSC tokens. Plus, stake your
                       tokens to earn rewards! Add 0xb11dB272e82165dB60dC70E to
-                      your wallet to see your $BTCMTX.
+                      your wallet to see your $VOLTBSC.
                     </P>
                     <div className="flex flex-col items-center justify-center space-y-1 pb-4">
                       <div className="text-center flex items-center justify-center gap-2 ">
@@ -271,7 +277,7 @@ const Home = () => {
                       </div>
                       <div className="text-center flex items-center justify-center gap-2 ">
                         <P className="font-semibold text-zinc-600">
-                          Your claimable BTCMTX
+                          Your claimable VOLTBSC
                         </P>
                         <P className="text-lg sm:text-xl">= 0</P>
                       </div>
@@ -317,21 +323,21 @@ const Home = () => {
                 <div className="flex sm:hidden flex-col justify-center max-w-md w-full  rounded-lg bg-white shadow-lg">
                   <Tabs defaultValue="account" className="mx-auto">
                     <H4 className="bg-primary text-white text-center py-4 mb-6 text-lg sm:text-xl font-normal rounded-t-lg px-6">
-                      $BTCMTX Claim and Token now LIVE!
+                      $VOLTBSC Claim and Token now LIVE!
                     </H4>
                     <div className="mx-2 mb-2">
                       <TabsList className="grid w-full grid-cols-2 mx-auto p-1 ">
-                        <TabsTrigger value="account">BUY BTCMTX</TabsTrigger>
+                        <TabsTrigger value="account">BUY VOLTBSC</TabsTrigger>
                         <TabsTrigger value="info">Info</TabsTrigger>
                       </TabsList>
                     </div>
                     <TabsContent value="account">
                       <div className="flex flex-col items-center justify-center gap-2 px-6 space-y-2">
                         <P className="text-zinc-700 text-center  text-base">
-                          You can now claim your $BTCMTX tokens. Plus, stake
+                          You can now claim your $VOLTBSC tokens. Plus, stake
                           your tokens to earn rewards! Add
                           0xb11dB272e82165dB60dC70E to your wallet to see your
-                          $BTCMTX.
+                          $VOLTBSC.
                         </P>
                         <div className="flex flex-col items-center justify-center space-y-1 pb-4">
                           <div className="text-center flex items-center justify-center gap-2 ">
@@ -344,7 +350,7 @@ const Home = () => {
                           </div>
                           <div className="text-center flex items-center justify-center gap-2 ">
                             <P className="font-semibold text-zinc-600">
-                              Your claimable BTCMTX
+                              Your claimable VOLTBSC
                             </P>
                             <P className="text-lg sm:text-xl">= 0</P>
                           </div>
@@ -392,7 +398,7 @@ const Home = () => {
                         <P className="flex text-base max-w-prose text-balance sm:text-lg text-zinc-600 py-2">
                           One Bitcoin mined in 2013 appreciated 27,300% in 10
                           years. Bitcoin Minetrix provides hassle-free BTC
-                          mining for the next 10 years. Buy $BTCMTX today for as
+                          mining for the next 10 years. Buy $VOLTBSC today for as
                           little as $0.0148.
                         </P>
                         <div className="flex flex-col w-full justify-center lg:justify-start space-y-2  sm:space-x-4">
@@ -511,7 +517,7 @@ const Home = () => {
                   <p className="text-base text-zinc-600">
                     We&apos;re solving a huge problem by removing the risk of
                     third-party cloud mining scams and putting the control into
-                    the hands of token holders. Simply stake BTCMTX to earn
+                    the hands of token holders. Simply stake VOLTBSC to earn
                     credits, and use these to mine BTC.
                   </p>
                 </div>
@@ -550,7 +556,7 @@ const Home = () => {
               </P>
               <P className="heading text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 With Bitcoin Minetrix, these concerns are a thing of the past.
-                Users can simply stake their BTCMTX tokens to gain cloud mining
+                Users can simply stake their VOLTBSC tokens to gain cloud mining
                 credits. This decentralized method safeguards users' interests,
                 ensuring a secure and transparent mining experience.
               </P>
@@ -571,8 +577,8 @@ const Home = () => {
               </P>
               <P className="heading text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 Users of Bitcoin Minetrix need only an Ethereum-compatible
-                wallet such as MetaMask to purchase and stake BTCMTX tokens,
-                making things very simple. Staking BTCMTX earns non-tradable
+                wallet such as MetaMask to purchase and stake VOLTBSC tokens,
+                making things very simple. Staking VOLTBSC earns non-tradable
                 ERC-20 token credits that must be burned in exchange for BTC
                 cloud mining power.
               </P>
@@ -652,7 +658,7 @@ const Home = () => {
                 How To Access BTC Mining
               </H3>
               <P className="heading max-w-3xl text-base sm:text-base font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
-                Purchase BTCMTX tokens using ETH, USDT, BNB or bank card today
+                Purchase VOLTBSC tokens using ETH, USDT, BNB or bank card today
                 and stake them to earn cloud mining credits. Burn credits to
                 increase your bitcoin mining power.
               </P>
@@ -685,7 +691,7 @@ const Home = () => {
                     <CardContent>
                       <CardDescription className="text-base text-gray-600">
                         Connect your wallet and use the presale widget at the
-                        top of the page to buy BTCMTX tokens. You can use ETH,
+                        top of the page to buy VOLTBSC tokens. You can use ETH,
                         BNB, USDT, or bank card. Make sure you have enough ETH
                         or BNB to cover gas fees.
                       </CardDescription>
@@ -710,7 +716,7 @@ const Home = () => {
                     <CardContent>
                       <CardDescription className="text-base text-gray-600">
                         If you select the ‘Buy & Stake’ option you can start
-                        staking immediately and earn more BTCMTX tokens. Staking
+                        staking immediately and earn more VOLTBSC tokens. Staking
                         for mining credits (Stake-to-Mine) will be available
                         when the app is launched.
                       </CardDescription>
@@ -734,7 +740,7 @@ const Home = () => {
                     </CardHeader>
                     <CardContent>
                       <CardDescription className="text-base text-gray-600">
-                        Your staked BTCMTX will generate mining credits over
+                        Your staked VOLTBSC will generate mining credits over
                         time. Burn mining credits to purchase bitcoin cloud
                         mining power. The more credits you burn, the more BTC
                         you&#39;ll earn through cloud mining.
@@ -757,7 +763,7 @@ const Home = () => {
                 Bitcoin Minetrix Stake-to-Mine Dashboard
               </H3>
               <P className="max-w-4xl text-base sm:text-lg font-semibold text-zinc-100 mb-4 tracking-normal">
-                Manage all your BTCMTX tokens and mining credits in one place
+                Manage all your VOLTBSC tokens and mining credits in one place
                 with the Bitcoin Minetrix dashboard. Gain cloud mining power
                 using your mining credits earned through staking.
               </P>
@@ -799,7 +805,7 @@ const Home = () => {
               <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
                 Enter our Gleam competition below to stand a chance to win one
                 of 10 prize allocations, each worth $3,000. We aim to reward our
-                community with $30,000 worth of $BTCMTX tokens in total. Terms
+                community with $30,000 worth of $VOLTBSC tokens in total. Terms
                 and conditions apply.
               </P>
             </div>
@@ -878,7 +884,7 @@ const Home = () => {
                         Token, presale and staking contract development
                       </li>
                       <li className="text-gray-600 mb-2">
-                        BTCMTX campaign - presale launch, claim and exchange
+                        VOLTBSC campaign - presale launch, claim and exchange
                         listings
                       </li>
                       <li className="text-gray-600">
@@ -904,7 +910,7 @@ const Home = () => {
                         Token, presale and staking contract development
                       </li>
                       <li className="text-gray-600 mb-2">
-                        BTCMTX campaign - presale launch, claim and exchange
+                        VOLTBSC campaign - presale launch, claim and exchange
                         listings
                       </li>
                       <li className="text-gray-600">
@@ -930,7 +936,7 @@ const Home = () => {
                         Token, presale and staking contract development
                       </li>
                       <li className="text-gray-600 mb-2">
-                        BTCMTX campaign - presale launch, claim and exchange
+                        VOLTBSC campaign - presale launch, claim and exchange
                         listings
                       </li>
                       <li className="text-gray-600">
@@ -956,7 +962,7 @@ const Home = () => {
                         Token, presale and staking contract development
                       </li>
                       <li className="text-gray-600 mb-2">
-                        BTCMTX campaign - presale launch, claim and exchange
+                        VOLTBSC campaign - presale launch, claim and exchange
                         listings
                       </li>
                       <li className="text-gray-600">
@@ -982,7 +988,7 @@ const Home = () => {
                         Token, presale and staking contract development
                       </li>
                       <li className="text-gray-600 mb-2">
-                        BTCMTX campaign - presale launch, claim and exchange
+                        VOLTBSC campaign - presale launch, claim and exchange
                         listings
                       </li>
                       <li className="text-gray-600">
@@ -1008,7 +1014,7 @@ const Home = () => {
                         Token, presale and staking contract development
                       </li>
                       <li className="text-gray-600 mb-2">
-                        BTCMTX campaign - presale launch, claim and exchange
+                        VOLTBSC campaign - presale launch, claim and exchange
                         listings
                       </li>
                       <li className="text-gray-600">
@@ -1072,10 +1078,10 @@ const Home = () => {
                   Tokenomics
                 </H3>
                 <P className="heading max-w-5xl text-base sm:text-lg font-sans text-zinc-600 mt-4 mb-4 tracking-normal">
-                  42.5% of the BTCMTX tokens will be used to fund the bitcoin
+                  42.5% of the VOLTBSC tokens will be used to fund the bitcoin
                   mining operations of Bitcoin Minetrix. 35% of the tokens will
-                  be allocated to marketing efforts and growing BTCMTX. 12.5% is
-                  for BTCMTX staking rewards until the Bitcoin Minetrix cloud
+                  be allocated to marketing efforts and growing VOLTBSC. 12.5% is
+                  for VOLTBSC staking rewards until the Bitcoin Minetrix cloud
                   mining platform is developed. 10% is allocated to community
                   rewards for active participation in the project.
                 </P>

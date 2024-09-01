@@ -7,27 +7,33 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const DonutChart = () => {
   const tokenomicsData = [
     {
-      fund: "Bitcoin Mining",
-      allocation: 42.5,
-      token: "1,700,000,000",
+      fund: "Private Sale",
+      allocation: 15,
+      token: "66,000,000",
       imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-darker.svg",
     },
     {
-      fund: "Marketing",
-      allocation: 35.0,
-      token: "1,400,000,000",
+      fund: "Affilate & Stacking",
+      allocation: 30,
+      token: "132,000,000",
       imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-dark.svg",
     },
     {
-      fund: "Staking",
-      allocation: 12.5,
-      token: "500,000,000",
+      fund: "Development & Core Charity",
+      allocation: 10,
+      token: "44,000,000", 
       imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-light.svg",
     },
     {
-      fund: "Community",
-      allocation: 10.0,
-      token: "400,000,000",
+      fund: "Public Exchange Listing",
+      allocation: 30,
+      token: "32,000,000",
+      imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-lighter.svg",
+    },
+    {
+      fund: "Creator",
+      allocation: 5,
+      token: "22,000,000",
       imgSrc: "https://bitcoinminetrix.com/assets/images/ellipse-lighter.svg",
     },
   ];
@@ -103,7 +109,7 @@ const DonutChart = () => {
       <Doughnut data={data} options={options} />
       <p className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
         <span className="block text-lg font-semibold">Total Supply</span>
-        <span className="block text-2xl font-bold">4,000,000,000</span>
+        <span className="block text-2xl font-bold">44,000,000</span>
       </p>
     </div>
   );

@@ -7,6 +7,7 @@ import { colorTheme } from "./../constants/colorTheme";
 import { Button } from "./Button";
 import AppLogo from "./AppLogo";
 import { RxHamburgerMenu } from "react-icons/rx";
+import logovolt from "./../assets/logovolt.png";
 import {
   Sheet,
   SheetContent,
@@ -243,7 +244,7 @@ const NavBar = () => {
                     type="button"
                     className="w-full rounded-md bg-primary px-3 py-[0.5rem] text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
-                    BUY BTCMTX TOKEN
+                    BUY VOLTBSC TOKEN
                   </button>
                 </Link>
               </div>
